@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="TECH SHOP">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.danh_mucs" Caption="Danh Mục" ImageName="BO_Note" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="bao_hanhs_ListView" ImageName="BO_Security_Permission_Type" Caption="Bảo Hành" ViewId="bao_hanhs_ListView" />
+          <Item Id="chuc_vus_ListView" ImageName="BO_Person" Caption="Chức Vụ" />
+          <Item Id="danh_mucs_ListView" ImageName="BO_Note" Caption="Danh Mục" />
+          <Item Id="don_hangs_ListView" ImageName="BO_Order" Caption="Đơn Hàng" />
+          <Item Id="don_vi_van_chuyens_ListView" ImageName="BO_Vendor" Caption="Đơn Vị Vận Chuyển" />
+          <Item Id="khach_hangs_ListView" Caption="Khách Hàng" ImageName="NewCustomer" />
+          <Item Id="khuyen_mais_ListView" ImageName="BO_Sale" Caption="Khuyến Mãi" QuickAccessItem="True" />
+          <Item Id="nha_cung_caps_ListView" Caption="Nhà Cung Cấp" ImageName="ModelEditor_Group" />
+          <Item Id="nhan_viens_ListView" ImageName="BO_Position_v92" Caption="Nhân Viên" />
+          <Item Id="phieu_nhap_khos_ListView" Caption="Hóa Đơn Nhập Kho" ImageName="BO_KPI_Scorecard" />
+          <Item Id="phieu_xuat_khos_ListView" Caption="Hóa Đơn Bán Hàng" ImageName="BO_Task" />
+          <Item Id="san_phams_ListView" Caption="Sản Phẩm" ImageName="BO_Product_Group" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="24.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="24.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="chi_tiet_san_phams_ListView">
+      <Columns>
+        <ColumnInfo Id="id_san_pham" Width="223" />
+        <ColumnInfo Id="id_khuyen_mai" Width="201" />
+        <ColumnInfo Id="tinh_trang" Width="167" />
+      </Columns>
+    </ListView>
+    <DetailView Id="danh_mucs_DetailView">
+      <Items>
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="ten_danh_muc" Caption="Tên Danh Mục: " />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12.448132780082988">
+            <LayoutGroup Id="danh_mucs" Caption="Danh Mục" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="danh_mucs_col1" RelativeSize="100">
+                <LayoutItem Id="id" RelativeSize="50" />
+                <LayoutItem Id="ten_danh_muc" RelativeSize="50" />
+                <LayoutItem Id="id_danh_muc_cha" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="danh_mucs_col2" RelativeSize="50" Removed="True">
+                <LayoutItem Id="link_anh" RelativeSize="36.170212765957444" />
+                <LayoutItem Id="tinh_trang" RelativeSize="63.829787234042556" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="san_phamss_Group" Direction="Vertical" RelativeSize="87.55186721991701" Caption="Sản Phẩm">
+            <LayoutItem Id="san_phamss" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="danh_mucs_ListView" Caption="Danh Mục">
+      <Columns>
+        <ColumnInfo Id="id" Caption="Mã Danh Mục" />
+        <ColumnInfo Id="link_anh" SortIndex="0" SortOrder="Descending" Index="-1" />
+        <ColumnInfo Id="ten_danh_muc" SortIndex="-1" SortOrder="None" Caption="Tên Danh Mục" />
+        <ColumnInfo Id="id_danh_muc_cha" Caption="Danh Mục Cha" />
+        <ColumnInfo Id="tinh_trang" Index="2" Caption="Tình Trạng" />
+      </Columns>
+    </ListView>
+    <ListView Id="danh_mucs_san_phamss_ListView">
+      <Columns>
+        <ColumnInfo Id="id_danh_muc_cha" Index="-1" />
+        <ColumnInfo Id="link_anh" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="ten_san_pham" SortIndex="0" SortOrder="Ascending" Caption="Tên Sản Phẩm" Width="131" />
+        <ColumnInfo Id="id_danh_muc" PropertyName="id_danh_muc.ten_danh_muc" Caption="Tên Danh Mục" Index="1" Width="146" />
+        <ColumnInfo Id="so_luong" Caption="Số Lượng" Index="2" />
+        <ColumnInfo Id="don_gia" Caption="Đơn Giá" Index="3" />
+        <ColumnInfo Id="thoi_han_bao_hanh" Caption="Thời Hạn Bảo Hành" Index="4" />
+        <ColumnInfo Id="don_vi_tinh" Caption="Đơn Vị Tính" Index="5" />
+        <ColumnInfo Id="mo_ta" Caption="Mô Tả" Index="6" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyUser_Roles_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="312" />
+        <ColumnInfo Id="IsAdministrative" Width="133" />
+        <ColumnInfo Id="CanEditModel" Width="124" />
+      </Columns>
+    </ListView>
+    <ListView Id="san_phams_chi_tiet_san_phamss_ListView">
+      <Columns>
+        <ColumnInfo Id="id_khuyen_mai" Width="210" />
+        <ColumnInfo Id="tinh_trang" Width="290" />
+      </Columns>
+    </ListView>
+    <ListView Id="san_phams_CT_don_hangss_ListView">
+      <Columns>
+        <ColumnInfo Id="id_don_hang" Width="168" />
+        <ColumnInfo Id="so_seri" Width="116" />
+        <ColumnInfo Id="ngay_bd_bh" Width="115" />
+        <ColumnInfo Id="ngay_het_bh" Width="123" />
+        <ColumnInfo Id="thanh_tien" Width="146" />
+      </Columns>
+    </ListView>
+    <ListView Id="san_phams_CT_phieu_nhapss_ListView">
+      <Columns>
+        <ColumnInfo Id="id_phieu_nhap" Width="137" />
+        <ColumnInfo Id="so_luong" Width="128" />
+        <ColumnInfo Id="don_gia" Width="141" />
+        <ColumnInfo Id="thanh_tien" Width="115" />
+        <ColumnInfo Id="tinh_trang" Width="117" />
+      </Columns>
+    </ListView>
+    <DetailView Id="san_phams_DetailView">
+      <Items>
+        <PropertyEditor Id="don_gia" Caption="Đơn Giá" />
+        <PropertyEditor Id="don_vi_tinh" Caption="Đơn Vị Tính: " />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="id_danh_muc" Caption="Danh Mục: " />
+        <PropertyEditor Id="id_danh_muc_cha" Caption="Danh Mục Cha: " />
+        <PropertyEditor Id="mo_ta" Caption="Mô Tả: " />
+        <PropertyEditor Id="so_luong" Caption="Số Lượng" />
+        <PropertyEditor Id="ten_san_pham" Caption="Tên Sản Phẩm: " />
+        <PropertyEditor Id="thoi_han_bao_hanh" Caption="Thời Hạn Bảo Hành" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20.53941908713693">
+            <LayoutGroup Id="san_phams" RelativeSize="100" Caption="Sản Phẩm">
+              <LayoutGroup Id="san_phams_col1" RelativeSize="49.943502824858754">
+                <LayoutItem Id="id" RelativeSize="24" />
+                <LayoutItem Id="ten_san_pham" ViewItem="ten_san_pham" Index="1" RelativeSize="17.333333333333332" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="id_danh_muc" Index="2" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="so_luong" Index="3" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="don_gia" Index="4" RelativeSize="24" />
+                <LayoutItem Id="link_anh" Index="4" RelativeSize="15.116279069767442" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="san_phams_col2" RelativeSize="50.056497175141246">
+                <LayoutItem Id="thoi_han_bao_hanh" RelativeSize="24" />
+                <LayoutItem Id="don_vi_tinh" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="mo_ta" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="id_danh_muc_cha" RelativeSize="41.333333333333336" />
+                <LayoutItem Id="tinh_trang" RelativeSize="23.28767123287671" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="79.46058091286307">
+            <LayoutGroup Id="chi_tiet_san_phamss" Direction="Vertical" RelativeSize="100">
+              <LayoutItem Id="chi_tiet_san_phamss" Index="0" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CT_don_hangss" RelativeSize="100">
+              <LayoutItem Id="CT_don_hangss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CT_phieu_nhapss" RelativeSize="100">
+              <LayoutItem Id="CT_phieu_nhapss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CT_phieu_xuatss" RelativeSize="100">
+              <LayoutItem Id="CT_phieu_xuatss" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="san_phams_ListView">
+      <Columns>
+        <ColumnInfo Id="ten_san_pham" Caption="Tên Sản Phẩm" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

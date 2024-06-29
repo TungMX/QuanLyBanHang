@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ff4bec33-be0a-47f0-b031-5cdbc26f8113" namespace="QuanLyBanHang.Module.QuanLyBanHang" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="LAPTOP-BUVD22J1SQLEXPRESSQuanLyBanHang" createdInVersion="24.1.3.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="true" lastModifiedInVersion="24.1.3.0" name="QuanLyBanHang" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="4c14abcb-cc36-4bc3-89f7-8c5b7b5284c7">
+      <comment Id="51dab565-410b-4fcc-9280-28acce7130a1" text="The 'PK__bao_hanh__3213E83F93D97959' index is ignored, because 'id' is a key" name="bao_hanhsComment">
+        <subjects>
+          <commentReferencesSubjects Id="9133dff7-de0b-459d-86b4-d097c1af2cd7">
+            <xpObjectMoniker Id="9435b2db-e7ec-46f9-af21-0d97799082ac" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="56cf003a-9e02-4a2e-920d-736b39f7da35">
+      <comment Id="e7f13205-12dd-4938-b899-c63ddaef68f0" text="The 'PK__chi_tiet__C45A03424CE8FF6D' index is ignored, because 'so_seri' is a key" name="chi_tiet_san_phamsComment">
+        <subjects>
+          <commentReferencesSubjects Id="3e0a23c0-1e56-4a2e-9828-112e3053d5af">
+            <xpObjectMoniker Id="fabbda42-4a19-46a7-90d1-cbd174caece1" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="fb5acec1-96e0-4a09-bddd-298b8cdb9c73">
+      <comment Id="0efb11d6-0b21-4e0a-ab3d-5a2fc8c9a5cf" text="The 'PK__chuc_vus__3213E83F1D0B1C09' index is ignored, because 'id' is a key" name="chuc_vusComment">
+        <subjects>
+          <commentReferencesSubjects Id="bc98db81-268d-4f93-b8b4-d7b260552aef">
+            <xpObjectMoniker Id="646b086d-c625-4596-88f8-ed3979d7de64" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="126880dc-61ca-41d0-aafd-5df9380812d9">
+      <comment Id="b204c1a3-85db-4d09-bf22-5fd305a49d87" text="The 'PK__CT_don_h__3213E83FA08342C9' index is ignored, because 'id' is a key" name="CT_don_hangsComment">
+        <subjects>
+          <commentReferencesSubjects Id="3d9f3c6b-8467-49c3-9ebc-3f8f27e01c1c">
+            <xpObjectMoniker Id="00ee3368-0573-4d7d-a204-a7fcd3a0535e" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="16500994-b7bc-4f6f-97f6-720a8f2c6e62">
+      <comment Id="03b264c2-b87d-4f9d-ab63-ae69526e8bfd" text="The 'PK__CT_phieu__3213E83F99CC08CA' index is ignored, because 'id' is a key" name="CT_phieu_nhapsComment">
+        <subjects>
+          <commentReferencesSubjects Id="5405d702-0048-4193-8d93-2ac1896fe195">
+            <xpObjectMoniker Id="a781306d-6354-40fc-91de-dbcc1f2ffee1" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="a06c6edf-7d3f-457a-8844-3fa80d13354e">
+      <comment Id="c215767a-fbb7-4bb3-b359-b0b08d3afc56" text="The 'PK__CT_phieu__3213E83F58B9DB69' index is ignored, because 'id' is a key" name="CT_phieu_xuatsComment">
+        <subjects>
+          <commentReferencesSubjects Id="c6ee5c98-eeaa-4267-b0e8-0445861d6c4c">
+            <xpObjectMoniker Id="de9d0bd5-28a5-4305-a820-6a4bca063513" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="7bef27e4-ebdf-42c8-8c5f-26d94e1675fe">
+      <comment Id="5318d1f2-530b-47bf-8e57-095ead7885f6" text="The 'PK__danh_muc__3213E83FB0AFE293' index is ignored, because 'id' is a key" name="danh_mucsComment">
+        <subjects>
+          <commentReferencesSubjects Id="1a64c6ba-9fc4-4cd2-be94-61c598f013c1">
+            <xpObjectMoniker Id="53e39790-c284-468a-9774-570369c6eeb8" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="809fae6b-67cf-44c2-a0ab-d53e810996e8">
+      <comment Id="7ee934f9-2dc5-4098-9ad7-2c2c112c564a" text="The 'PK__don_hang__3213E83FAA66C620' index is ignored, because 'id' is a key" name="don_hangsComment">
+        <subjects>
+          <commentReferencesSubjects Id="9882e117-5ac9-4fbc-be37-c328e6a6d09d">
+            <xpObjectMoniker Id="064dfc10-07df-44f2-81d2-7d0081201559" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="bc572dba-ee88-48b3-8888-557ddf43a422">
+      <comment Id="89d3df86-0d39-4152-bc60-238cbea4374d" text="The 'PK__don_vi_v__3213E83F29E64D0F' index is ignored, because 'id' is a key" name="don_vi_van_chuyensComment">
+        <subjects>
+          <commentReferencesSubjects Id="c4d0ead9-f33c-4193-bc28-b2cd1d07b3b3">
+            <xpObjectMoniker Id="ef2273b4-2393-44de-90f0-00fb38e39286" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="f5ebb229-8a07-4eab-a209-4975dea53e64">
+      <comment Id="9aa2929f-5413-49cf-9469-3413405dd529" text="The 'PK__khach_ha__3213E83F1D88FD3E' index is ignored, because 'id' is a key" name="khach_hangsComment">
+        <subjects>
+          <commentReferencesSubjects Id="6d4b20bd-d32a-4121-a79d-7af151278a3f">
+            <xpObjectMoniker Id="baaa71ed-647a-437a-8e62-c597827fb33c" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="4524dc07-afa6-447a-a0f0-4bc92092f73f">
+      <comment Id="46d8f927-8a90-4338-ae33-bf529367087c" text="The 'PK__khuyen_m__3213E83F60CA3931' index is ignored, because 'id' is a key" name="khuyen_maisComment">
+        <subjects>
+          <commentReferencesSubjects Id="9a2086aa-6316-45aa-a350-9aaade678c91">
+            <xpObjectMoniker Id="ff1d8efd-64f4-4977-873b-6acacb0975fe" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="7396a424-94bb-4755-8b5d-73420117bfaf">
+      <comment Id="873d3eb1-d564-4821-89f2-f287321a3adc" text="The 'PK__nha_cung__3213E83F4A83AEBC' index is ignored, because 'id' is a key" name="nha_cung_capsComment">
+        <subjects>
+          <commentReferencesSubjects Id="ebd62c35-a149-447e-a4f8-d602cf631876">
+            <xpObjectMoniker Id="750fc481-0d56-4731-b72e-bcbb1c084ed1" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="8ec8e705-c170-4529-94c9-aa2ef09130e1">
+      <comment Id="a792a51e-7c4d-4de7-b27c-67b0194a904e" text="The 'PK__nhan_vie__3213E83F73B378D2' index is ignored, because 'id' is a key" name="nhan_viensComment">
+        <subjects>
+          <commentReferencesSubjects Id="4de7cad0-7796-4032-9301-54b84764fd86">
+            <xpObjectMoniker Id="228bf6a5-f52c-4be4-af67-ceed4d93b73d" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="a35bab01-d442-42db-b6e6-7e3069193d91">
+      <comment Id="5e1bf870-1564-48bf-87f4-00e680cdcbe0" text="The 'PK__phieu_nh__3213E83FDA80B16D' index is ignored, because 'id' is a key" name="phieu_nhap_khosComment">
+        <subjects>
+          <commentReferencesSubjects Id="278deb8b-798e-4b8c-987a-4d33d03f695b">
+            <xpObjectMoniker Id="48092cfa-2ab6-49ab-a87f-cad2596c770a" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="9fb36f8c-4131-4b5c-a7dc-41c49f21504e">
+      <comment Id="fd4d0395-cb9e-4d71-9b29-b267d6bcea9e" text="The 'PK__phieu_xu__3213E83F79A5F900' index is ignored, because 'id' is a key" name="phieu_xuat_khosComment">
+        <subjects>
+          <commentReferencesSubjects Id="30b7b3ee-fa8e-44ee-966b-466906ba6c07">
+            <xpObjectMoniker Id="05e58f69-ad89-41bc-a85a-d719efc5f6bb" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="c52faec2-7c80-48de-870c-c2b25e4417d0">
+      <comment Id="ecbf1cd0-63e7-4f89-a23f-65c1c3cfefeb" text="The 'PK__san_pham__3213E83F9CBA4AD7' index is ignored, because 'id' is a key" name="san_phamsComment">
+        <subjects>
+          <commentReferencesSubjects Id="ecbed251-5271-4d16-9c64-294dc3143cee">
+            <xpObjectMoniker Id="7abc70ab-9a8c-40f4-a26a-0fea10f3993c" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="2fce6612-c027-4e0d-b27b-52e713b2bbd1">
+      <xpObject Id="9435b2db-e7ec-46f9-af21-0d97799082ac" name="bao_hanhs" baseClass="XPLiteObject" userFileName="bao_hanhs" designerFileName="bao_hanhs.Designer" className="bao_hanhs" initialName="bao_hanhs" virtualBaseClass="XPLiteObject" persistent="bao_hanhs" virtualName="bao_hanhs">
+        <fields>
+          <generalXpObjectHasFields Id="5072a36f-4333-428a-855a-4ed2da3c317d">
+            <field Id="1fb939d4-adfe-4932-81a9-e4d409baf1d7" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c13833bc-0beb-4b92-9b59-8bb91d11a0ec">
+            <field Id="028f09e4-c73d-49fd-bc31-32eb5a723756" name="id_ct_phieu_xuat" columnType="Int32" initialName="id_ct_phieu_xuat" persistent="id_ct_phieu_xuat" virtualColumnType="CT_phieu_xuats" logicalType="CT_phieu_xuats" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4feb485d-2d1e-4783-bff8-cb46c643a9f4">
+            <field Id="a4a50ab9-3ec2-4198-955e-4ce7879298ed" name="ngay_bao_hanh" columnType="DateTime" initialName="ngay_bao_hanh" persistent="ngay_bao_hanh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="01403aed-088f-43d1-9a71-0b71e791d500">
+            <field Id="a938be76-4082-47e0-8c9d-6ae1d3328234" name="noi_dung_bh" initialName="noi_dung_bh" persistent="noi_dung_bh" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fc116c00-2cd1-4376-a03b-aeb34b48274f">
+            <field Id="98bcb953-45b8-4473-80e5-feb18e8c23e7" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="74caf9e4-7e02-431e-912b-ed1bde35af59">
+      <xpObject Id="fabbda42-4a19-46a7-90d1-cbd174caece1" name="chi_tiet_san_phams" baseClass="XPLiteObject" userFileName="chi_tiet_san_phams" designerFileName="chi_tiet_san_phams.Designer" className="chi_tiet_san_phams" initialName="chi_tiet_san_phams" virtualBaseClass="XPLiteObject" persistent="chi_tiet_san_phams" virtualName="chi_tiet_san_phams">
+        <fields>
+          <generalXpObjectHasFields Id="2ac52fa4-66c4-4e8a-ad5e-28b937863098">
+            <field Id="12aeca3d-26b0-450c-945f-e7feaa854b6f" name="so_seri" initialName="so_seri" key="true" persistent="so_seri" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="76b0d064-b162-48fa-b753-f33606cf5efa">
+            <field Id="4cdcbe00-94d4-4fca-a33e-3d087f82fd22" name="id_san_pham" columnType="Int32" initialName="id_san_pham" persistent="id_san_pham" virtualColumnType="san_phams" logicalType="san_phams" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="638bb15b-9299-46b7-abf9-5d42aad90382">
+            <field Id="73f916ff-d987-48df-aa76-44e540da3efc" name="id_khuyen_mai" columnType="Int32" initialName="id_khuyen_mai" persistent="id_khuyen_mai" virtualColumnType="khuyen_mais" logicalType="khuyen_mais" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2172cbd1-08cc-442a-af45-7601b782006d">
+            <field Id="a02de360-79a1-44aa-a14e-615ac26fd276" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="4eea0d79-025a-4ab9-8d11-83df83165984">
+      <xpObject Id="646b086d-c625-4596-88f8-ed3979d7de64" name="chuc_vus" baseClass="XPLiteObject" userFileName="chuc_vus" designerFileName="chuc_vus.Designer" className="chuc_vus" initialName="chuc_vus" virtualBaseClass="XPLiteObject" persistent="chuc_vus" virtualName="chuc_vus">
+        <fields>
+          <generalXpObjectHasFields Id="ee292585-eb83-401c-9889-239a3748439b">
+            <field Id="c1d68cb7-70c5-4a13-b45f-03db2a576642" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="78284d82-b37a-49ae-bbe7-72d0f5506aee">
+            <field Id="5e0e1fc0-58aa-4c41-bbe9-ebb3520b54cc" name="ten_chuc_vu" initialName="ten_chuc_vu" persistent="ten_chuc_vu" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="522d21b2-639e-4f4f-8001-37c4159cef98">
+            <field Id="b74451d9-e51e-44f5-b465-282bbdde42ac" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="7fb6de6e-9b12-430a-90c8-2a1123b7412f" sourceCollectionName="nhan_vienss" name="nhan_viensReferenceschuc_vus" targetFieldName="id_chuc_vu">
+            <xpObjectMoniker Id="228bf6a5-f52c-4be4-af67-ceed4d93b73d" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="b6541838-ed83-44e2-86a8-651ddaf49ea8">
+            <collectionField Id="a0b24a8f-9275-4f05-a2bc-69d07773f319" name="nhan_vienss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="dd298290-04eb-4bb6-b456-9203c0e89514">
+      <xpObject Id="00ee3368-0573-4d7d-a204-a7fcd3a0535e" name="CT_don_hangs" baseClass="XPLiteObject" userFileName="CT_don_hangs" designerFileName="CT_don_hangs.Designer" className="CT_don_hangs" initialName="CT_don_hangs" virtualBaseClass="XPLiteObject" persistent="CT_don_hangs" virtualName="CT_don_hangs">
+        <fields>
+          <generalXpObjectHasFields Id="c46a0b76-0211-441a-a017-f81c963280cf">
+            <field Id="5a4a267f-53fc-4410-bc25-0dfaf501441d" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6161515a-8ee4-4639-a5cd-a2516fc11f73">
+            <field Id="fc1d39a6-f201-4702-9f8e-a231ed67f6ba" name="id_don_hang" columnType="Int32" initialName="id_don_hang" persistent="id_don_hang" virtualColumnType="don_hangs" logicalType="don_hangs" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3f97c88c-428c-4224-8306-52cd256a153d">
+            <field Id="743f24d7-d589-4f84-86cb-6689a291424b" name="so_seri" initialName="so_seri" persistent="so_seri" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a433ae63-b848-46fa-bf04-121b7b73c7c6">
+            <field Id="31d64992-1551-43ce-94f3-6fc86dc71bc6" name="id_san_pham" columnType="Int32" initialName="id_san_pham" persistent="id_san_pham" virtualColumnType="san_phams" logicalType="san_phams" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="359262e8-9041-414b-8e7f-44d03af24933">
+            <field Id="3e9fd9d3-2305-4a16-ba89-6e4129058da0" name="ngay_bd_bh" columnType="DateTime" initialName="ngay_bd_bh" persistent="ngay_bd_bh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dba7eb3f-9fa4-4814-b86d-64ed71f2955b">
+            <field Id="55e840c8-0f4e-4c8c-9546-6f11ebe23c95" name="ngay_het_bh" columnType="DateTime" initialName="ngay_het_bh" persistent="ngay_het_bh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f99cc048-5811-4bf8-83ad-538a8067af7e">
+            <field Id="4c72bdab-179f-4d0a-96fa-236ef31b5e74" name="thanh_tien" columnType="Decimal" initialName="thanh_tien" persistent="thanh_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" defaultValue="Decimal#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="8205c8e8-6bfb-48bf-b738-86a2b0806448">
+      <xpObject Id="a781306d-6354-40fc-91de-dbcc1f2ffee1" name="CT_phieu_nhaps" baseClass="XPLiteObject" userFileName="CT_phieu_nhaps" designerFileName="CT_phieu_nhaps.Designer" className="CT_phieu_nhaps" initialName="CT_phieu_nhaps" virtualBaseClass="XPLiteObject" persistent="CT_phieu_nhaps" virtualName="CT_phieu_nhaps">
+        <fields>
+          <generalXpObjectHasFields Id="635f1254-12e8-4814-b27d-44d218024619">
+            <field Id="622aa1c6-0ff1-4566-bbe1-e8da6f49dd54" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5442203c-5d40-48b0-914b-dd0aa236812e">
+            <field Id="7939c039-fbce-4e03-9b46-0c47a4375082" name="id_phieu_nhap" columnType="Int32" initialName="id_phieu_nhap" persistent="id_phieu_nhap" virtualColumnType="phieu_nhap_khos" logicalType="phieu_nhap_khos" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9e9afeb2-6c7c-4aa3-8a8c-38a113743ba1">
+            <field Id="f9bc62f0-3777-461c-a1b9-cab7d5148e6d" name="id_san_pham" columnType="Int32" initialName="id_san_pham" persistent="id_san_pham" virtualColumnType="san_phams" logicalType="san_phams" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="23baeafc-d172-4024-b569-1cef4586edd6">
+            <field Id="8543a870-8b98-4f96-b698-c00335a8b2b2" name="so_luong" columnType="Int32" initialName="so_luong" persistent="so_luong" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9c57c986-4427-4644-8f4c-3f68587a6e5c">
+            <field Id="9d5479ba-fd95-416e-b715-52473a43cc99" name="don_gia" columnType="Decimal" initialName="don_gia" persistent="don_gia" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b76a9d1c-045c-4ad3-9c6b-01a48ff9c77a">
+            <field Id="cac81a53-ec38-4d75-920f-ff2ae2de5b73" name="thanh_tien" columnType="Decimal" initialName="thanh_tien" persistent="thanh_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="23624f05-3949-4f7a-9f7a-81492019c4b3">
+            <field Id="12831df7-cc21-4cb1-a8ed-d49b6d4cd6f7" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6150545d-3cb5-4104-b8fc-b518ec865dbb">
+      <xpObject Id="de9d0bd5-28a5-4305-a820-6a4bca063513" name="CT_phieu_xuats" baseClass="XPLiteObject" userFileName="CT_phieu_xuats" designerFileName="CT_phieu_xuats.Designer" className="CT_phieu_xuats" initialName="CT_phieu_xuats" virtualBaseClass="XPLiteObject" persistent="CT_phieu_xuats" virtualName="CT_phieu_xuats">
+        <fields>
+          <generalXpObjectHasFields Id="9f182ef0-873c-4e26-a533-07ed644b89b4">
+            <field Id="aaefcb17-f5b2-48b6-9564-2e9db003bc7b" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="83a0030b-7db1-460f-b7de-a86a4d1f8c18">
+            <field Id="895c8114-43bf-4ba9-8cf0-879a9358f7f9" name="id_phieu_xuat" columnType="Int32" initialName="id_phieu_xuat" persistent="id_phieu_xuat" virtualColumnType="phieu_xuat_khos" logicalType="phieu_xuat_khos" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="547fd1d9-51a4-4f84-a21a-95aa701e5d69">
+            <field Id="ff054245-640c-4fbd-8ff4-34f5af72a8d4" name="id_san_pham" columnType="Int32" initialName="id_san_pham" persistent="id_san_pham" virtualColumnType="san_phams" logicalType="san_phams" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="283171e9-d33e-41be-8302-fdb42e9b368d">
+            <field Id="da0261e2-e33c-4d4d-b7b4-689a6f77296b" name="so_seri" initialName="so_seri" persistent="so_seri" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="99c7a64b-2170-4265-b3d2-01885d92d932">
+            <field Id="cb048bbc-f1c4-4475-8169-a3a8332a29f1" name="ngay_bd_bh" columnType="DateTime" initialName="ngay_bd_bh" persistent="ngay_bd_bh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3eadb724-8970-4da9-8e41-a9faf93d9db5">
+            <field Id="a9096e72-e5d1-4d8f-a95c-e3e56c6dfe94" name="ngay_het_bh" columnType="DateTime" initialName="ngay_het_bh" persistent="ngay_het_bh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="650ab4f5-c15e-4ef0-846a-928c5a35c787">
+            <field Id="62401421-0bc9-4700-b5dc-443b9a2f4e3c" name="thanh_tien" columnType="Decimal" initialName="thanh_tien" persistent="thanh_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" defaultValue="Decimal#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="2ea83948-0c46-4859-891f-fffe3ee6b1b8" sourceCollectionName="bao_hanhss" name="bao_hanhsReferencesCT_phieu_xuats" targetFieldName="id_ct_phieu_xuat">
+            <xpObjectMoniker Id="9435b2db-e7ec-46f9-af21-0d97799082ac" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="1aa93838-841a-4c3d-b399-875a490cfd49">
+            <collectionField Id="2e8ae5b6-8a04-49ca-8248-eb12bc99eec4" name="bao_hanhss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="f95d4c33-26cc-4446-bd21-11f666dc694f">
+      <xpObject Id="53e39790-c284-468a-9774-570369c6eeb8" name="danh_mucs" baseClass="XPLiteObject" userFileName="danh_mucs" designerFileName="danh_mucs.Designer" className="danh_mucs" initialName="danh_mucs" virtualBaseClass="XPLiteObject" persistent="danh_mucs" virtualName="danh_mucs">
+        <fields>
+          <generalXpObjectHasFields Id="9fc93ae7-9732-4883-aad8-7f6b6b855c35">
+            <field Id="ed30c735-c00f-4a48-93d1-6fc057a36ed6" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ee8ee790-3cf6-40a3-8a3e-d59b5b45cbb3">
+            <field Id="cb1ff2be-34c8-4d9e-a865-3be63bf8097e" name="ten_danh_muc" initialName="ten_danh_muc" persistent="ten_danh_muc" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c1b0f2a4-fcb7-42c6-a361-6699f3d7b7fc">
+            <field Id="31afab3a-a3d0-463d-b728-9af4dfdc56a4" name="id_danh_muc_cha" columnType="Int32" initialName="id_danh_muc_cha" persistent="id_danh_muc_cha" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6a0e94c4-0f07-412e-9247-fff029137fb0">
+            <field Id="7f0a0c1e-10ac-4a8b-a74c-3fcf54b597f8" name="link_anh" initialName="link_anh" persistent="link_anh" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7ed1be8b-c1d9-45c8-abcd-959fb854a2a4">
+            <field Id="18f2e3d6-4079-4a2b-a813-0d1dab8c1c04" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="c7657cc7-d5ab-4b87-9a22-3e8b44c5aa25" sourceCollectionName="san_phamss" name="san_phamsReferencesdanh_mucs" targetFieldName="id_danh_muc">
+            <xpObjectMoniker Id="7abc70ab-9a8c-40f4-a26a-0fea10f3993c" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="9cefcfe9-c93e-40eb-b7b3-6b60c4858d20">
+            <collectionField Id="d7f91c90-9893-4d3c-b1fe-243fae25f58a" name="san_phamss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="365ebfaf-b0a5-4a51-b1d9-0bf74b172a01">
+      <xpObject Id="064dfc10-07df-44f2-81d2-7d0081201559" name="don_hangs" baseClass="XPLiteObject" userFileName="don_hangs" designerFileName="don_hangs.Designer" className="don_hangs" initialName="don_hangs" virtualBaseClass="XPLiteObject" persistent="don_hangs" virtualName="don_hangs">
+        <fields>
+          <generalXpObjectHasFields Id="4a0bc1c1-04b0-418e-8aac-f66e99a268a2">
+            <field Id="3dc563c7-ddd3-47a2-a039-9152fe0bbd9f" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1b84f988-f8cd-45bf-9770-584de3f15ae3">
+            <field Id="cdda9d9c-b359-48c3-b7a3-8464f39d0fc1" name="ngay" columnType="DateTime" initialName="ngay" persistent="ngay" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bf577b5f-9e71-45ef-98c4-2cf30d25baf7">
+            <field Id="d34f11a0-ac63-448d-8b08-995d2674a52f" name="id_khach_hang" columnType="Int32" initialName="id_khach_hang" persistent="id_khach_hang" virtualColumnType="khach_hangs" logicalType="khach_hangs" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a77e9848-a3c9-4e49-83fe-7878edf22be2">
+            <field Id="f8db39db-801f-4e39-b878-f38aec4aa8d3" name="id_don_vi_vc" columnType="Int32" initialName="id_don_vi_vc" persistent="id_don_vi_vc" virtualColumnType="don_vi_van_chuyens" logicalType="don_vi_van_chuyens" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4102e6bf-aa83-4a92-bb9c-d79b64c43489">
+            <field Id="4e2de89a-a608-446e-b300-33e3a80a7357" name="id_nhan_vien" columnType="Int32" initialName="id_nhan_vien" persistent="id_nhan_vien" virtualColumnType="nhan_viens" logicalType="nhan_viens" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5a571110-57d9-49e1-aa62-f608b5932fac">
+            <field Id="2699fd0d-c71e-4c5b-930a-aa43d6c7874e" name="thanh_tien" columnType="Decimal" initialName="thanh_tien" persistent="thanh_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" defaultValue="Decimal#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="528c7f7f-1be3-4f23-8a3d-281ce234b3d7">
+            <field Id="35d6c0dd-4dde-41ed-b158-bf2810d323c5" name="phuong_thuc_thanh_toan" columnType="Int32" initialName="phuong_thuc_thanh_toan" persistent="phuong_thuc_thanh_toan" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="30dd63a1-242a-4575-b29b-60a8ec7ce150">
+            <field Id="9c6f50fd-f4a0-4502-93e4-de4dd527ab12" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="64db9b0c-5823-4113-88ae-acd59c396b39" sourceCollectionName="CT_don_hangss" name="CT_don_hangsReferencesdon_hangs" targetFieldName="id_don_hang">
+            <xpObjectMoniker Id="00ee3368-0573-4d7d-a204-a7fcd3a0535e" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="69c4488d-a3c8-4278-a7e5-65d855409899">
+            <collectionField Id="c15f4f48-7b78-4766-8fc9-d5bec9acc995" name="CT_don_hangss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="8edcffc6-d4c8-4461-a9c9-04e24b8aba4b">
+      <xpObject Id="ef2273b4-2393-44de-90f0-00fb38e39286" name="don_vi_van_chuyens" baseClass="XPLiteObject" userFileName="don_vi_van_chuyens" designerFileName="don_vi_van_chuyens.Designer" className="don_vi_van_chuyens" initialName="don_vi_van_chuyens" virtualBaseClass="XPLiteObject" persistent="don_vi_van_chuyens" virtualName="don_vi_van_chuyens">
+        <fields>
+          <generalXpObjectHasFields Id="a5813abb-2a62-45d3-b097-7902067b8c3a">
+            <field Id="2c9d6ff4-9759-4220-acd9-ba2549e66d96" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6672f0b1-7520-4928-b120-7315faef72aa">
+            <field Id="ba9d6317-62b6-497c-b4ce-edb2944799d1" name="ten_don_vi" initialName="ten_don_vi" persistent="ten_don_vi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="407a2e13-0460-455d-8ad4-1a7f831579ab">
+            <field Id="62f43b8e-c0f1-4744-a4b7-6b7502886d8d" name="email" initialName="email" persistent="email" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1f04679f-1332-4ac8-923c-8ba1fbe0d7a3">
+            <field Id="f1ed6fa8-49e7-47ff-b389-864d83b264e3" name="so_dien_thoai" initialName="so_dien_thoai" persistent="so_dien_thoai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="15" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dd8c6606-313f-472d-961e-d53251825ca8">
+            <field Id="da652581-508d-47fb-bcfd-c956a83daec7" name="dia_chi" initialName="dia_chi" persistent="dia_chi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="70c5f62c-3b62-4072-92c6-3ba451247060">
+            <field Id="abcd70b8-cac7-4b97-8f9e-6fa99dc77a28" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="2e11359b-7f9c-44d0-ba49-f1fd57e95385" sourceCollectionName="don_hangss" name="don_hangsReferencesdon_vi_van_chuyens" targetFieldName="id_don_vi_vc">
+            <xpObjectMoniker Id="064dfc10-07df-44f2-81d2-7d0081201559" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="aed6bd05-98e4-4b19-99f7-2c4453ffbb66">
+            <collectionField Id="8cbf5bcb-9705-46be-8479-0be751bd3456" name="don_hangss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="bd35c7c9-b3b9-4ffc-b533-c46b98ab8f6a">
+      <xpObject Id="baaa71ed-647a-437a-8e62-c597827fb33c" name="khach_hangs" baseClass="XPLiteObject" userFileName="khach_hangs" designerFileName="khach_hangs.Designer" className="khach_hangs" initialName="khach_hangs" virtualBaseClass="XPLiteObject" persistent="khach_hangs" virtualName="khach_hangs">
+        <fields>
+          <generalXpObjectHasFields Id="95195546-3409-4a5b-911d-edd29c136f95">
+            <field Id="49ca8724-2287-49a0-a1b9-f7796abbc768" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e1e1255d-9136-46e2-b1dc-c075f45fa1d6">
+            <field Id="1f415aad-94df-47d7-92d2-817b3b47eb85" name="ho_ten" initialName="ho_ten" persistent="ho_ten" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="19873ac9-a09c-41e1-8d7b-4f255005e7b1">
+            <field Id="a343f064-ad95-4b17-88db-e52cdb01f516" name="so_dien_thoai" initialName="so_dien_thoai" persistent="so_dien_thoai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="15" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c9ce22af-a03a-4065-bbd5-56a6c74b2534">
+            <field Id="a456fbe8-45fa-4b22-9483-47c56bd753ad" name="dia_chi" initialName="dia_chi" persistent="dia_chi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a67041cf-5d51-4f40-9c78-709d1bdd7c5c">
+            <field Id="96b76df2-fd70-4a7e-a635-b5f18571c229" name="ngay_sinh" columnType="DateTime" initialName="ngay_sinh" persistent="ngay_sinh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="02fb96e3-76f5-48a4-b314-b1031fcf0288">
+            <field Id="0480ac0c-d14a-4c9f-8f9e-bcfcef254307" name="gioi_tinh" columnType="Int32" initialName="gioi_tinh" persistent="gioi_tinh" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="566d7f0c-6908-40dd-8ce6-ee5783b9181a">
+            <field Id="c43be220-2068-4291-9cf1-f3029fb93019" name="email" initialName="email" persistent="email" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="53cee275-99c8-4c1f-b341-601fb7431a1c">
+            <field Id="3557b5af-2484-4134-b3c1-d018feb75633" name="mat_khau" initialName="mat_khau" persistent="mat_khau" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="45075b79-33f5-4140-91ce-adc39eba5bf3">
+            <field Id="3429c8bf-02c4-4094-86e9-ac6ebf6d611b" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="73682af7-6a2c-4905-a34f-6d150f95fa8c" sourceCollectionName="don_hangss" name="don_hangsReferenceskhach_hangs" targetFieldName="id_khach_hang">
+            <xpObjectMoniker Id="064dfc10-07df-44f2-81d2-7d0081201559" />
+          </simpleAssociation>
+          <simpleAssociation Id="6e15c017-f550-4fa4-aa50-d8c3ea62297d" sourceCollectionName="phieu_xuat_khoss" name="phieu_xuat_khosReferenceskhach_hangs" targetFieldName="id_khach_hang">
+            <xpObjectMoniker Id="05e58f69-ad89-41bc-a85a-d719efc5f6bb" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="74b4d5dc-a16e-4b1e-9502-d82a2cae73c2">
+            <collectionField Id="522b7fef-adeb-4286-a99a-05219bf692c1" name="don_hangss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="e9c79a3e-540a-403f-9fda-3a6b793fba1d">
+            <collectionField Id="e17e5d54-e4b8-448c-9a42-5d3334c3690c" name="phieu_xuat_khoss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="c70e9a4f-f1c5-4a9b-acf5-fae2f9f8b494">
+      <xpObject Id="ff1d8efd-64f4-4977-873b-6acacb0975fe" name="khuyen_mais" baseClass="XPLiteObject" userFileName="khuyen_mais" designerFileName="khuyen_mais.Designer" className="khuyen_mais" initialName="khuyen_mais" virtualBaseClass="XPLiteObject" persistent="khuyen_mais" virtualName="khuyen_mais">
+        <fields>
+          <generalXpObjectHasFields Id="81fa982d-0c07-4533-9fb8-6b9cb3a5682b">
+            <field Id="377005c8-4c29-4cc8-a9da-931744824ba1" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="69717c61-651c-4381-b18e-c89c81367d35">
+            <field Id="594afed4-74eb-4a3e-88b0-82126e820d51" name="ten_khuyen_mai" initialName="ten_khuyen_mai" persistent="ten_khuyen_mai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="972c50a3-af0d-457f-8a20-5a1f768a0ea7">
+            <field Id="cf6add58-5741-453d-86af-209bdad43f87" name="link_anh" initialName="link_anh" persistent="link_anh" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e0204f63-a76d-4062-a383-f2c64a94f419">
+            <field Id="e16b6212-ab9d-4ae0-b8a2-632437b8a38f" name="ngay_bat_dau" columnType="DateTime" initialName="ngay_bat_dau" persistent="ngay_bat_dau" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c7b9d4e1-7ba3-4a81-9175-b88f69bd89a0">
+            <field Id="1af38bdf-f8e3-4d9c-a83b-2310bab8c7eb" name="ngay_ket_thuc" columnType="DateTime" initialName="ngay_ket_thuc" persistent="ngay_ket_thuc" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cd9a356e-c24d-4601-b0e6-051e74faf442">
+            <field Id="4588ff9e-086c-48a7-a012-34891a286dfb" name="dieu_kien_khuyen_mai" initialName="dieu_kien_khuyen_mai" persistent="dieu_kien_khuyen_mai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c8c8897c-76e2-4368-9805-8028560dce65">
+            <field Id="53697260-245f-40ae-ab07-db7d9f7f7bf3" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="603ae53b-b86c-4693-a4c7-3fd78d753992" sourceCollectionName="chi_tiet_san_phamss" name="chi_tiet_san_phamsReferenceskhuyen_mais" targetFieldName="id_khuyen_mai">
+            <xpObjectMoniker Id="fabbda42-4a19-46a7-90d1-cbd174caece1" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="0c58a684-fa52-499a-994a-c2ccb9e270c4">
+            <collectionField Id="574b26b5-1ca8-4d88-9272-45f657039bdf" name="chi_tiet_san_phamss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b7119f8c-e91d-42f4-a48d-c81de3110ed5">
+      <xpObject Id="750fc481-0d56-4731-b72e-bcbb1c084ed1" name="nha_cung_caps" baseClass="XPLiteObject" userFileName="nha_cung_caps" designerFileName="nha_cung_caps.Designer" className="nha_cung_caps" initialName="nha_cung_caps" virtualBaseClass="XPLiteObject" persistent="nha_cung_caps" virtualName="nha_cung_caps">
+        <fields>
+          <generalXpObjectHasFields Id="b7fe5c79-4b4b-4193-966a-b7976d8d7d95">
+            <field Id="00fe2803-d512-4589-bf4f-368a312a0451" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fe86e409-0c52-4cdf-ba99-77a1bb1c1b62">
+            <field Id="dfda7ed6-50bc-4952-b7cf-627d1fb6f856" name="ten_ncc" initialName="ten_ncc" persistent="ten_ncc" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8c459189-e3c6-4941-8e7c-86e24d03d8ef">
+            <field Id="dfaadc64-e97c-4999-a4f3-5c2eb0e75c25" name="email" initialName="email" persistent="email" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6cef38dd-b6ba-4bf8-a950-6fcc7d75ccf5">
+            <field Id="aee9d007-2514-4b4d-bcd8-b6cebfb8f40a" name="so_dien_thoai" initialName="so_dien_thoai" persistent="so_dien_thoai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="15" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="44ed6347-9d05-486d-80ff-4a10e4452192">
+            <field Id="05e397ce-ade1-494a-8b06-43c539d02012" name="dia_chi" initialName="dia_chi" persistent="dia_chi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d7ef67dd-f1e7-4a7e-90f7-1ef0fc249728">
+            <field Id="2adca034-7487-470e-8f39-06a6bf856f01" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="f79dddf7-edb6-4b36-9ef7-a7f9989f7d81" sourceCollectionName="phieu_nhap_khoss" name="phieu_nhap_khosReferencesnha_cung_caps" targetFieldName="id_nha_cung_cap">
+            <xpObjectMoniker Id="48092cfa-2ab6-49ab-a87f-cad2596c770a" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="123e0452-44ba-44ca-8cd3-806a272f53a8">
+            <collectionField Id="7dd13544-e9fa-4194-a6fc-8afdefeff060" name="phieu_nhap_khoss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="a5e51235-19b9-431c-ab86-6344c5346b06">
+      <xpObject Id="228bf6a5-f52c-4be4-af67-ceed4d93b73d" name="nhan_viens" baseClass="XPLiteObject" userFileName="nhan_viens" designerFileName="nhan_viens.Designer" className="nhan_viens" initialName="nhan_viens" virtualBaseClass="XPLiteObject" persistent="nhan_viens" virtualName="nhan_viens">
+        <fields>
+          <generalXpObjectHasFields Id="c80d1cb7-2ff9-49fe-aade-80c7bbefe48a">
+            <field Id="46c74903-ccbc-426d-8f95-eede54b1163e" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4070dbb6-e7d2-4ea6-8370-a9b714cc5f60">
+            <field Id="63f41706-ac0b-476e-a936-dcff9065675d" name="ho_ten" initialName="ho_ten" persistent="ho_ten" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9b88baf8-ab77-47f4-9dc2-db86d1fa5ced">
+            <field Id="49a242ed-21df-4bdf-b924-0680a10095eb" name="so_dien_thoai" initialName="so_dien_thoai" persistent="so_dien_thoai" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="15" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="515d8c39-1ecd-488c-b711-d73b01a4c220">
+            <field Id="653223bb-2f0e-4e5e-858d-5fbd299c3849" name="dia_chi" initialName="dia_chi" persistent="dia_chi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5fe9a119-18d1-48d3-96de-bbd42413c36e">
+            <field Id="2d01b8eb-b79b-44c8-86a3-f9a79748f33f" name="ngay_sinh" columnType="DateTime" initialName="ngay_sinh" persistent="ngay_sinh" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="30ae7b04-2a7c-42da-ac26-9c8b60b02939">
+            <field Id="4fda64a6-2b82-4d1b-9f48-58962bf95393" name="gioi_tinh" columnType="Int32" initialName="gioi_tinh" persistent="gioi_tinh" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7799f7af-04b7-405d-bef9-91ebd548b50b">
+            <field Id="4f0e10d3-f7a9-4024-a4fc-ab0ae82784e0" name="email" initialName="email" persistent="email" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="79f63faa-d3d6-44b6-b305-343fa920396d">
+            <field Id="b5813f26-c72d-4a23-8a6d-a4f5433d4bd4" name="mat_khau" initialName="mat_khau" persistent="mat_khau" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="70aba3bf-ff6d-438a-982d-3b5dd316f345">
+            <field Id="55001c62-d388-4116-8778-ebb841154eae" name="id_chuc_vu" columnType="Int32" initialName="id_chuc_vu" persistent="id_chuc_vu" virtualColumnType="chuc_vus" logicalType="chuc_vus" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="428259e4-db88-4cba-b250-16d994f8ceb9">
+            <field Id="f5b65081-aefa-49a7-89f4-a4308ba35511" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="103d6e1f-6da3-4b2e-bf3f-67e34646b764" sourceCollectionName="don_hangss" name="don_hangsReferencesnhan_viens" targetFieldName="id_nhan_vien">
+            <xpObjectMoniker Id="064dfc10-07df-44f2-81d2-7d0081201559" />
+          </simpleAssociation>
+          <simpleAssociation Id="999b9929-47fc-4984-aeea-7faca643df31" sourceCollectionName="phieu_nhap_khoss" name="phieu_nhap_khosReferencesnhan_viens" targetFieldName="id_nhan_vien">
+            <xpObjectMoniker Id="48092cfa-2ab6-49ab-a87f-cad2596c770a" />
+          </simpleAssociation>
+          <simpleAssociation Id="5d278fa0-5006-4e1e-b354-d20b615d5b81" sourceCollectionName="phieu_xuat_khoss" name="phieu_xuat_khosReferencesnhan_viens" targetFieldName="id_nhan_vien">
+            <xpObjectMoniker Id="05e58f69-ad89-41bc-a85a-d719efc5f6bb" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="26fde57e-3bf4-4d7a-b198-60cec18cdd35">
+            <collectionField Id="4db6d42f-1fee-4a15-a011-f33e068f24f5" name="don_hangss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="0fea0438-ba9a-4cea-bf67-a530e7247c8a">
+            <collectionField Id="1bef738f-101d-497b-80f8-cdda5d466aa7" name="phieu_nhap_khoss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="8bd75266-d92d-4ff0-9f80-7bf7dba981de">
+            <collectionField Id="00e6bfee-de7e-49a1-a189-79e5c0d18d77" name="phieu_xuat_khoss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="4f1936b5-8135-453e-8f8c-8f28b618031b">
+      <xpObject Id="48092cfa-2ab6-49ab-a87f-cad2596c770a" name="phieu_nhap_khos" baseClass="XPLiteObject" userFileName="phieu_nhap_khos" designerFileName="phieu_nhap_khos.Designer" className="phieu_nhap_khos" initialName="phieu_nhap_khos" virtualBaseClass="XPLiteObject" persistent="phieu_nhap_khos" virtualName="phieu_nhap_khos">
+        <fields>
+          <generalXpObjectHasFields Id="c0da65a1-96fd-45d8-886b-8c67000687ba">
+            <field Id="1b24bfb0-49f6-4d88-a390-b9fc04bcdffa" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1d4cef8d-8c8c-4d23-85f4-e755ab345152">
+            <field Id="57e5ebc2-6500-40ca-9176-3a7ba0be9ecc" name="ma_phieu_nhap" initialName="ma_phieu_nhap" persistent="ma_phieu_nhap" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="618d7523-7caa-4b70-a342-e770e9e5eacc">
+            <field Id="d9f9f0ac-f728-452d-8f44-fa45bdfdf65e" name="id_nha_cung_cap" columnType="Int32" initialName="id_nha_cung_cap" persistent="id_nha_cung_cap" virtualColumnType="nha_cung_caps" logicalType="nha_cung_caps" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="753ce735-7f0f-4618-9e86-936e733ffed9">
+            <field Id="5e1c81be-7f73-48f7-bd40-6f5a66d4053a" name="id_nhan_vien" columnType="Int32" initialName="id_nhan_vien" persistent="id_nhan_vien" virtualColumnType="nhan_viens" logicalType="nhan_viens" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e8388a76-f790-4d1b-bf57-e94eb716752e">
+            <field Id="b9a4dac6-966b-4011-a194-1f0f1e9b9f65" name="ghi_chu" initialName="ghi_chu" persistent="ghi_chu" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5a667210-ffd4-4967-9284-d48414b344fc">
+            <field Id="b6d3af5a-de7e-4381-881d-665e964effbe" name="tong_tien" columnType="Decimal" initialName="tong_tien" persistent="tong_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" defaultValue="Decimal#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="975dc033-1918-4f5d-9fbe-c27b5551247f">
+            <field Id="319b9497-af7e-4147-84d6-355c4c65de3d" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="0e25ad26-2475-4bc2-914d-89bc0f234c9b" sourceCollectionName="CT_phieu_nhapss" name="CT_phieu_nhapsReferencesphieu_nhap_khos" targetFieldName="id_phieu_nhap">
+            <xpObjectMoniker Id="a781306d-6354-40fc-91de-dbcc1f2ffee1" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="90aaadbd-af17-4172-94f8-22196f223e4f">
+            <collectionField Id="ea1875a6-8c60-4d5e-b4bf-4f70db6b0725" name="CT_phieu_nhapss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="7c30a2c7-fabd-4c30-8a9e-56c5c913f716">
+      <xpObject Id="05e58f69-ad89-41bc-a85a-d719efc5f6bb" name="phieu_xuat_khos" baseClass="XPLiteObject" userFileName="phieu_xuat_khos" designerFileName="phieu_xuat_khos.Designer" className="phieu_xuat_khos" initialName="phieu_xuat_khos" virtualBaseClass="XPLiteObject" persistent="phieu_xuat_khos" virtualName="phieu_xuat_khos">
+        <fields>
+          <generalXpObjectHasFields Id="82d37bda-4ae7-4f70-804b-e616e77da5e3">
+            <field Id="c26b8130-b6ac-417c-a759-fd968f47ee14" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4ca6a6ce-9c52-4774-a1ef-831edd2d6b86">
+            <field Id="72b5ceea-dd45-4a39-9550-273c31fb3f9d" name="ma_phieu_xuat" initialName="ma_phieu_xuat" persistent="ma_phieu_xuat" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4688c46c-690e-4d3a-9ff2-1f3626db4666">
+            <field Id="f769b397-2449-421c-9d29-1f39d9bf35b1" name="id_khach_hang" columnType="Int32" initialName="id_khach_hang" persistent="id_khach_hang" virtualColumnType="khach_hangs" logicalType="khach_hangs" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="33ab81ea-52b2-4bdc-b069-dc638d363d75">
+            <field Id="486a08a2-1bb8-44d8-87a4-1aa454029998" name="id_nhan_vien" columnType="Int32" initialName="id_nhan_vien" persistent="id_nhan_vien" virtualColumnType="nhan_viens" logicalType="nhan_viens" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3928357f-4884-4e70-a5cd-5cbd1bbd53a3">
+            <field Id="a67eccc5-c31d-4278-b375-3c40893877ba" name="ghi_chu" initialName="ghi_chu" persistent="ghi_chu" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d5479e87-f936-404b-a48a-e2173598d252">
+            <field Id="1c7e6877-3070-40fb-be8d-adbf99659f69" name="tong_tien" columnType="Decimal" initialName="tong_tien" persistent="tong_tien" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" defaultValue="Decimal#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="33964841-7514-489e-98a9-8b9e8db4e2a2">
+            <field Id="f4c2f9ea-65c6-4ca8-a645-53a68d20dc1b" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="63e3b218-6c6d-4722-bcc9-5dc053e5a462" sourceCollectionName="CT_phieu_xuatss" name="CT_phieu_xuatsReferencesphieu_xuat_khos" targetFieldName="id_phieu_xuat">
+            <xpObjectMoniker Id="de9d0bd5-28a5-4305-a820-6a4bca063513" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="27f4f1c9-254c-4809-8155-e2d37fe9b2a6">
+            <collectionField Id="c91305e5-0d06-4a25-9c55-afe30bdb69d5" name="CT_phieu_xuatss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="08f590a8-c51e-40a0-8560-982188149530">
+      <xpObject Id="7abc70ab-9a8c-40f4-a26a-0fea10f3993c" name="san_phams" baseClass="XPLiteObject" userFileName="san_phams" designerFileName="san_phams.Designer" className="san_phams" initialName="san_phams" virtualBaseClass="XPLiteObject" persistent="san_phams" virtualName="san_phams">
+        <fields>
+          <generalXpObjectHasFields Id="3ec18a28-56eb-49a8-b058-d3b7a75b8a19">
+            <field Id="8a4a43b9-9b38-4f8c-90f6-b90352c440cd" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2f281a41-76be-4336-8c9c-6f1e0d9b124c">
+            <field Id="5c078e84-d450-4d99-bcea-205fc5c77c71" name="ten_san_pham" initialName="ten_san_pham" persistent="ten_san_pham" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cb398fff-ee1a-45d0-8478-3b9062b81983">
+            <field Id="3fd28b34-5761-4028-8414-a2f27d4d3294" name="id_danh_muc" columnType="Int32" initialName="id_danh_muc" persistent="id_danh_muc" virtualColumnType="danh_mucs" logicalType="danh_mucs" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1e46ff95-aedc-4304-8781-0334187321e5">
+            <field Id="5f554ce8-274d-45d0-a903-cc26a47ff09c" name="so_luong" columnType="Int32" initialName="so_luong" persistent="so_luong" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="aee12d73-d99a-4e22-8daf-e8e43ca9cdff">
+            <field Id="6720aa43-8a31-4d79-aba5-48f74a3d5753" name="link_anh" initialName="link_anh" persistent="link_anh" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a2ce0472-2c52-41d3-acfc-6c5722eeba69">
+            <field Id="45b0e89a-a2d1-45ba-9fbe-996d4704b334" name="don_gia" columnType="Decimal" initialName="don_gia" persistent="don_gia" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3b30f0d6-58b0-4701-a4db-ef202757f896">
+            <field Id="2046b8aa-6faf-48f4-96ae-f0f6e62588ba" name="thoi_han_bao_hanh" columnType="Int32" initialName="thoi_han_bao_hanh" persistent="thoi_han_bao_hanh" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1013c2cb-a66b-4db5-8e41-60abf5c64175">
+            <field Id="5366ed1e-3b3f-4ce6-b115-e53d546110db" name="don_vi_tinh" initialName="don_vi_tinh" persistent="don_vi_tinh" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="aae2f19a-5a66-48f2-b1c0-531768513f99">
+            <field Id="f31e73a7-29df-45d3-9aa1-b33f833ca54a" name="mo_ta" initialName="mo_ta" persistent="mo_ta" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3f74260f-adbb-44bd-b044-b2980f20b2c8">
+            <field Id="9c4e6ad2-59b0-4e13-8ce1-96b36e8c81c4" name="id_danh_muc_cha" columnType="Int32" initialName="id_danh_muc_cha" persistent="id_danh_muc_cha" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1a911099-5583-417c-bebf-d5e5fd89f579">
+            <field Id="de105877-93e5-4a2d-8e11-f89377d34af7" name="tinh_trang" columnType="Int32" initialName="tinh_trang" persistent="tinh_trang" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#1" dbDefaultValue="((1))" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="8cbd1a7b-54b2-4718-ab43-d92df6b07d67" sourceCollectionName="chi_tiet_san_phamss" name="chi_tiet_san_phamsReferencessan_phams" targetFieldName="id_san_pham">
+            <xpObjectMoniker Id="fabbda42-4a19-46a7-90d1-cbd174caece1" />
+          </simpleAssociation>
+          <simpleAssociation Id="f5b11404-586e-433e-a80d-8020b56d9c2e" sourceCollectionName="CT_don_hangss" name="CT_don_hangsReferencessan_phams" targetFieldName="id_san_pham">
+            <xpObjectMoniker Id="00ee3368-0573-4d7d-a204-a7fcd3a0535e" />
+          </simpleAssociation>
+          <simpleAssociation Id="ccb33cd7-b25f-41fd-9f92-e91a0526057d" sourceCollectionName="CT_phieu_nhapss" name="CT_phieu_nhapsReferencessan_phams" targetFieldName="id_san_pham">
+            <xpObjectMoniker Id="a781306d-6354-40fc-91de-dbcc1f2ffee1" />
+          </simpleAssociation>
+          <simpleAssociation Id="301fcb1b-67f8-4841-8c6b-2e3daea5d13b" sourceCollectionName="CT_phieu_xuatss" name="CT_phieu_xuatsReferencessan_phams" targetFieldName="id_san_pham">
+            <xpObjectMoniker Id="de9d0bd5-28a5-4305-a820-6a4bca063513" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="6c3ea620-609d-40f4-9c57-066858972d34">
+            <collectionField Id="9f328faf-86db-430c-9f8e-560bfd510eaf" name="chi_tiet_san_phamss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="9cc9f4f2-250d-4f23-a1d3-a503ee96b88d">
+            <collectionField Id="dca8711d-3805-4809-9489-5da2b7d98098" name="CT_don_hangss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="b0e2ae52-1af9-4877-8fe9-ccc747f03119">
+            <collectionField Id="c412a553-d0ff-48d9-b2eb-a9e6f92716a6" name="CT_phieu_nhapss" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="58d24db5-1789-4137-890a-4505ed4c5f63">
+            <collectionField Id="957beaee-e0ad-4c0d-8ab2-b3d16bb8eed8" name="CT_phieu_xuatss" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

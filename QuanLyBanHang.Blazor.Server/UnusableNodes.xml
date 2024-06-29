@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="danh_mucs_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="danh_mucs">
+              <LayoutGroup Id="danh_mucs_col2" RelativeSize="50.070323488045005" Removed="True">
+                <LayoutItem Id="link_anh" RelativeSize="50" />
+                <LayoutItem Id="tinh_trang" RelativeSize="50" />
+              </LayoutGroup>
+              <LayoutGroup Id="danh_mucs_col1">
+                <LayoutItem Id="id_danh_muc_cha" ShowCaption="False" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
