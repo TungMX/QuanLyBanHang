@@ -8,7 +8,7 @@ using System.Reflection;
 using DevExpress.Persistent.Base;
 namespace QuanLyBanHang.Module.QuanLyBanHang
 {
-    [NavigationItem(true)]
+    [DefaultClassOptions]
     public partial class san_phams
     {
         public san_phams(Session session) : base(session) { }

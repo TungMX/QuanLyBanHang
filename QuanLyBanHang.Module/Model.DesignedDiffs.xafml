@@ -40,6 +40,46 @@
         <ColumnInfo Id="tinh_trang" Width="167" />
       </Columns>
     </ListView>
+    <DetailView Id="chuc_vus_DetailView">
+      <Items>
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="ten_chuc_vu" Caption="Tên Chức Vụ" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="14.526588845654993">
+            <LayoutGroup Id="chuc_vus" ShowCaption="True" RelativeSize="100" Caption="Chức Vụ">
+              <LayoutItem Id="id" RelativeSize="50" />
+              <LayoutItem Id="ten_chuc_vu" RelativeSize="50" />
+              <LayoutItem Id="tinh_trang" RelativeSize="36.170212765957444" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="nhan_vienss_Group" Direction="Vertical" RelativeSize="85.473411154345" Caption="Nhân Viên">
+            <LayoutItem Id="nhan_vienss" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="chuc_vus_ListView">
+      <Columns>
+        <ColumnInfo Id="ten_chuc_vu" Width="102" />
+        <ColumnInfo Id="tinh_trang" Width="90" />
+      </Columns>
+    </ListView>
+    <ListView Id="chuc_vus_nhan_vienss_ListView">
+      <Columns>
+        <ColumnInfo Id="id_chuc_vu" Width="87" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Width="82" Index="-1" />
+        <ColumnInfo Id="ho_ten" Width="80" SortIndex="0" SortOrder="Ascending" Caption="Họ Tên" />
+        <ColumnInfo Id="id_chuc_vu.ten_chuc_vu" PropertyName="id_chuc_vu.ten_chuc_vu" Index="1" Width="158" IsNewNode="True" />
+        <ColumnInfo Id="so_dien_thoai" Width="103" Index="2" />
+        <ColumnInfo Id="dia_chi" Width="64" Index="3" />
+        <ColumnInfo Id="ngay_sinh" Width="81" Index="4" />
+        <ColumnInfo Id="gioi_tinh" Width="72" Index="5" />
+        <ColumnInfo Id="email" Width="55" Index="6" />
+        <ColumnInfo Id="mat_khau" Width="80" Index="7" />
+      </Columns>
+    </ListView>
     <DetailView Id="danh_mucs_DetailView">
       <Items>
         <PropertyEditor Id="id" Caption="ID" />
@@ -70,9 +110,9 @@
       <Columns>
         <ColumnInfo Id="id" Caption="Mã Danh Mục" />
         <ColumnInfo Id="link_anh" SortIndex="0" SortOrder="Descending" Index="-1" />
-        <ColumnInfo Id="ten_danh_muc" SortIndex="-1" SortOrder="None" Caption="Tên Danh Mục" />
-        <ColumnInfo Id="id_danh_muc_cha" Caption="Danh Mục Cha" />
-        <ColumnInfo Id="tinh_trang" Index="2" Caption="Tình Trạng" />
+        <ColumnInfo Id="tinh_trang" Index="-1" Caption="Tình Trạng" Width="93" />
+        <ColumnInfo Id="ten_danh_muc" SortIndex="-1" SortOrder="None" Caption="Tên Danh Mục" Width="118" />
+        <ColumnInfo Id="id_danh_muc_cha" Caption="Danh Mục Cha" Width="120" />
       </Columns>
     </ListView>
     <ListView Id="danh_mucs_san_phamss_ListView">

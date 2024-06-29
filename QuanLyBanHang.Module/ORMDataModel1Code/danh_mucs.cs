@@ -8,7 +8,7 @@ using System.Reflection;
 using DevExpress.Persistent.Base;
 namespace QuanLyBanHang.Module.QuanLyBanHang
 {
-    [NavigationItem(true)]
+    [DefaultClassOptions]
     public partial class danh_mucs
     {
         public danh_mucs(Session session) : base(session) { }

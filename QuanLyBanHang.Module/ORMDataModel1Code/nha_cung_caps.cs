@@ -8,7 +8,7 @@ using System.Reflection;
 using DevExpress.Persistent.Base;
 namespace QuanLyBanHang.Module.QuanLyBanHang
 {
-    [NavigationItem(true)]
+    [DefaultClassOptions]
     public partial class nha_cung_caps
     {
         public nha_cung_caps(Session session) : base(session) { }
