@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="phieu_xuat_khos_ListView" Caption="Hóa Đơn Bán Hàng" ImageName="BO_Task" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="chi_tiet_san_phams_CT_don_hangss_ListView" Removed="True" />
+  </Views>
+</Application>

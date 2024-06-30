@@ -2,11 +2,203 @@
 <Application Title="TECH SHOP">
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
-    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.danh_mucs" Caption="Danh Mục" ImageName="BO_Note" />
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.bao_hanhs" Caption="Bảo Hành">
+      <OwnMembers>
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_ct_phieu_xuat" Caption="ID CT Phiếu Xuất" />
+        <Member Name="ngay_bao_hanh" Caption="Ngày Bảo Hành" />
+        <Member Name="noi_dung_bh" Caption="Nội Dung" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.chi_tiet_san_phams" Caption="Chi Tiết Sản Phẩm">
+      <OwnMembers>
+        <Member Name="id_don_hang" Caption="ID Đơn Hàng" />
+        <Member Name="id_khuyen_mai" Caption="ID Khuyến Mãi" />
+        <Member Name="id_san_pham" Caption="ID Sản Phẩm" />
+        <Member Name="so_seri" Caption="Seri" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.chuc_vus" Caption="Chức Vụ">
+      <OwnMembers>
+        <Member Name="id" Caption="ID" />
+        <Member Name="nhan_vienss" Caption="Nhân Viên" />
+        <Member Name="ten_chuc_vu" Caption="Tên Chức Vụ" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.CT_don_hangs" Caption="Chi Tiết Đơn Hàng">
+      <OwnMembers>
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_don_hang" Caption="ID Đơn Hàng" />
+        <Member Name="id_san_pham" Caption="ID Sản Phẩm" />
+        <Member Name="ngay_bd_bh" Caption="Ngày BĐ BH" />
+        <Member Name="ngay_het_bh" Caption="Ngày Hết BH" />
+        <Member Name="so_seri" Caption="Seri" />
+        <Member Name="thanh_tien" Caption="Thành Tiền" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.CT_phieu_nhaps" Caption="Chi Tiết Hóa Đơn Nhập">
+      <OwnMembers>
+        <Member Name="don_gia" Caption="Đơn Giá" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_phieu_nhap" Caption="ID Phiếu Nhập" />
+        <Member Name="id_san_pham" Caption="ID Sản Phẩm" />
+        <Member Name="so_luong" Caption="Số Lượng" />
+        <Member Name="thanh_tien" Caption="Thành Tiền" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.CT_phieu_xuats">
+      <OwnMembers>
+        <Member Name="bao_hanhss" Caption="Bảo Hành" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_phieu_xuat" Caption="ID Phiếu Xuất" />
+        <Member Name="id_san_pham" Caption="ID Sản Phẩm" />
+        <Member Name="ngay_bd_bh" Caption="Ngày BĐ BH" />
+        <Member Name="ngay_het_bh" Caption="Ngày Hết BH" />
+        <Member Name="so_seri" Caption="Seri" />
+        <Member Name="thanh_tien" Caption="Thành Tiền" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.danh_mucs" Caption="Danh Mục" ImageName="BO_Note">
+      <OwnMembers>
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_danh_muc_cha" Caption="ID Danh Mục Cha" />
+        <Member Name="link_anh" Caption="Hình Ảnh" />
+        <Member Name="san_phamss" Caption="Sản Phẩm" />
+        <Member Name="ten_danh_muc" Caption="Tên Danh Mục" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.don_hangs" Caption="Đơn Hàng">
+      <OwnMembers>
+        <Member Name="chi_tiet_san_phamss" Caption="Chi Tiết Sản Phẩm" />
+        <Member Name="CT_don_hangss" Caption="Chi Tiết Đơn Hàng" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_don_vi_vc" Caption="ID ĐVVC" />
+        <Member Name="id_khach_hang" Caption="ID Khách Hàng" />
+        <Member Name="id_nhan_vien" Caption="ID Nhân Viên" />
+        <Member Name="ngay" Caption="Ngày" />
+        <Member Name="phuong_thuc_thanh_toan" Caption="PTTT" />
+        <Member Name="thanh_tien" Caption="Thành Tiền" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.don_vi_van_chuyens" Caption="ĐVVC">
+      <OwnMembers>
+        <Member Name="dia_chi" Caption="Địa Chỉ" />
+        <Member Name="don_hangss" Caption="Đơn Hàng" />
+        <Member Name="email" Caption="Email" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="so_dien_thoai" Caption="Số Điện Thoại" />
+        <Member Name="ten_don_vi" Caption="Tên Công Ty" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.khach_hangs" Caption="Khách Hàng">
+      <OwnMembers>
+        <Member Name="dia_chi" Caption="Địa Chỉ" />
+        <Member Name="don_hangss" Caption="Đơn Hàng" />
+        <Member Name="email" Caption="Email" />
+        <Member Name="gioi_tinh" Caption="Giới Tính" />
+        <Member Name="ho_ten" Caption="Họ Tên" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="mat_khau" Caption="Mật Khẩu" />
+        <Member Name="ngay_sinh" Caption="Ngày Sinh" />
+        <Member Name="phieu_xuat_khoss" Caption="Phiếu Xuất " />
+        <Member Name="so_dien_thoai" Caption="Số Điện Thoại" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.khuyen_mais" Caption="Khuyến Mãi">
+      <OwnMembers>
+        <Member Name="chi_tiet_san_phamss" Caption="Chi Tiết Sản Phẩm" />
+        <Member Name="dieu_kien_khuyen_mai" Caption="Điều Kiện Khuyến Mãi" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="link_anh" Caption="Hình Ảnh" />
+        <Member Name="ngay_bat_dau" Caption="Ngày Bắt Đầu" />
+        <Member Name="ngay_ket_thuc" Caption="Ngày Kết Thúc" />
+        <Member Name="ten_khuyen_mai" Caption="Tên Khuyến Mãi" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.nha_cung_caps" Caption="Nhà Cung Cấp">
+      <OwnMembers>
+        <Member Name="dia_chi" Caption="Địa Chỉ" />
+        <Member Name="email" Caption="Email" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="phieu_nhap_khoss" Caption="Phiếu Nhập Kho" />
+        <Member Name="so_dien_thoai" Caption="Số Điện Thoại" />
+        <Member Name="ten_ncc" Caption="Tên Công Ty" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.nhan_viens" Caption="Nhân Viên">
+      <OwnMembers>
+        <Member Name="dia_chi" Caption="Địa Chỉ" />
+        <Member Name="don_hangss" Caption="Đơn Hàng" />
+        <Member Name="email" Caption="Email" />
+        <Member Name="gioi_tinh" Caption="Giới Tính" />
+        <Member Name="ho_ten" Caption="Họ Tên" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_chuc_vu" Caption="ID Chức Vụ" />
+        <Member Name="mat_khau" Caption="Mật Khẩu" />
+        <Member Name="ngay_sinh" Caption="Ngày Sinh" />
+        <Member Name="phieu_nhap_khoss" Caption="Phiếu Nhập" />
+        <Member Name="phieu_xuat_khoss" Caption="Phiếu Xuất" />
+        <Member Name="so_dien_thoai" Caption="Số Điện Thoại" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.phieu_nhap_khos" Caption="Hóa Đơn Nhập">
+      <OwnMembers>
+        <Member Name="CT_phieu_nhapss" Caption="Chi Tiết Phiếu Nhập" />
+        <Member Name="ghi_chu" Caption="Ghi Chú" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_nha_cung_cap" Caption="ID NCC" />
+        <Member Name="id_nhan_vien" Caption="ID Nhân Viên" />
+        <Member Name="ma_phieu_nhap" Caption="Mã Phiếu Nhập" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+        <Member Name="tong_tien" Caption="Tổng Tiền" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.phieu_xuat_khos" Caption="Hóa Đơn Bán">
+      <OwnMembers>
+        <Member Name="CT_phieu_xuatss" Caption="Chi Tiết Phiếu Xuất" />
+        <Member Name="ghi_chu" Caption="Ghi Chú" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_khach_hang" Caption="ID Khách Hàng" />
+        <Member Name="id_nhan_vien" Caption="ID Nhân Viên" />
+        <Member Name="ma_phieu_xuat" Caption="Mã Phiếu Xuất" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+        <Member Name="tong_tien" Caption="Tổng Tiền" />
+      </OwnMembers>
+    </Class>
+    <Class Name="QuanLyBanHang.Module.QuanLyBanHang.san_phams" Caption="Sản Phẩm">
+      <OwnMembers>
+        <Member Name="chi_tiet_san_phamss" Caption="Chi Tiết Sản Phẩm" />
+        <Member Name="CT_don_hangss" Caption="CT Đơn Hàng" />
+        <Member Name="CT_phieu_nhapss" Caption="CT Phiếu Nhập" />
+        <Member Name="CT_phieu_xuatss" Caption="CT Phiếu Xuất" />
+        <Member Name="don_gia" Caption="Đơn Giá" />
+        <Member Name="don_vi_tinh" Caption="ĐVT" />
+        <Member Name="id" Caption="ID" />
+        <Member Name="id_danh_muc" Caption="ID Danh Mục" />
+        <Member Name="id_danh_muc_cha" Caption="ID Danh Mục Cha" />
+        <Member Name="link_anh" Caption="Hình Ảnh" />
+        <Member Name="mo_ta" Caption="Mô Tả" />
+        <Member Name="so_luong" Caption="Số Lượng" />
+        <Member Name="ten_san_pham" Caption="Tên Sản Phẩm" />
+        <Member Name="thoi_han_bao_hanh" Caption="Thời Hạn BH" />
+        <Member Name="tinh_trang" Caption="Tình Trạng" />
+      </OwnMembers>
+    </Class>
   </BOModel>
   <NavigationItems>
     <Items>
-      <Item Id="Default">
+      <Item Id="Default" ImageName="BindingIndicatorActive" Caption="Quản Trị">
         <Items>
           <Item Id="bao_hanhs_ListView" ImageName="BO_Security_Permission_Type" Caption="Bảo Hành" ViewId="bao_hanhs_ListView" />
           <Item Id="chuc_vus_ListView" ImageName="BO_Person" Caption="Chức Vụ" />
@@ -18,10 +210,10 @@
           <Item Id="nha_cung_caps_ListView" Caption="Nhà Cung Cấp" ImageName="ModelEditor_Group" />
           <Item Id="nhan_viens_ListView" ImageName="BO_Position_v92" Caption="Nhân Viên" />
           <Item Id="phieu_nhap_khos_ListView" Caption="Hóa Đơn Nhập Kho" ImageName="BO_KPI_Scorecard" />
-          <Item Id="phieu_xuat_khos_ListView" Caption="Hóa Đơn Bán Hàng" ImageName="BO_Task" />
           <Item Id="san_phams_ListView" Caption="Sản Phẩm" ImageName="BO_Product_Group" />
         </Items>
       </Item>
+      <Item Id="Reports" Caption="Báo Cáo - Thống Kê" ImageName="ReportLayoutPivotTable" />
     </Items>
   </NavigationItems>
   <Options>
@@ -33,14 +225,100 @@
   </SchemaModules>
   <Views>
     <ListView Id="ApplicationUser_ListView" Caption="Users" />
-    <ListView Id="chi_tiet_san_phams_ListView">
+    <DetailView Id="bao_hanhs_DetailView" Caption="Chi Tiết Bảo Hành">
+      <Items>
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="id_ct_phieu_xuat" Caption="ID Hóa Đơn" />
+        <PropertyEditor Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" Caption="Email KH" IsNewNode="True" />
+        <PropertyEditor Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" Caption="Khách Hàng" IsNewNode="True" />
+        <PropertyEditor Id="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.ho_ten" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.ho_ten" Caption="Nhân Viên" IsNewNode="True" />
+        <PropertyEditor Id="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.id_chuc_vu.ten_chuc_vu" Caption="Chức Vụ" IsNewNode="True" />
+        <PropertyEditor Id="id_ct_phieu_xuat.id_san_pham.ten_san_pham" PropertyName="id_ct_phieu_xuat.id_san_pham.ten_san_pham" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <PropertyEditor Id="id_ct_phieu_xuat.so_seri" PropertyName="id_ct_phieu_xuat.so_seri" Caption="Seri" IsNewNode="True" />
+        <PropertyEditor Id="ngay_bao_hanh" Caption="Ngày Bảo Hành" />
+        <PropertyEditor Id="noi_dung_bh" Caption="Nội Dung BH" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="bao_hanhs" RelativeSize="100">
+              <LayoutGroup Id="bao_hanhs_col1" RelativeSize="50">
+                <LayoutItem Id="id" RelativeSize="3.938730853391685" />
+                <LayoutItem Id="id_ct_phieu_xuat" RelativeSize="2.8446389496717726" />
+                <LayoutItem Id="id_ct_phieu_xuat.so_seri" ViewItem="id_ct_phieu_xuat.so_seri" Index="2" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="id_ct_phieu_xuat.id_san_pham.ten_san_pham" ViewItem="id_ct_phieu_xuat.id_san_pham.ten_san_pham" Index="3" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="ngay_bao_hanh" RelativeSize="87.527352297593" Index="4" />
+              </LayoutGroup>
+              <LayoutGroup Id="bao_hanhs_col2" Caption="bao_hanhs_col2" RelativeSize="50">
+                <LayoutItem Id="noi_dung_bh" RelativeSize="3.938730853391685" Index="0" />
+                <LayoutItem Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" ViewItem="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" Index="1" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" ViewItem="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" Index="2" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.ho_ten" ViewItem="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.ho_ten" Index="3" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.id_chuc_vu.ten_chuc_vu" ViewItem="id_ct_phieu_xuat.id_phieu_xuat.id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="4" RelativeSize="87.527352297593" IsNewNode="True" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="bao_hanhs_ListView" Caption="Danh Sách Bảo Hành">
       <Columns>
-        <ColumnInfo Id="id_san_pham" Width="223" />
-        <ColumnInfo Id="id_khuyen_mai" Width="201" />
-        <ColumnInfo Id="tinh_trang" Width="167" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="id_ct_phieu_xuat" Index="1" Caption="ID Chi Tiết HĐ" />
+        <ColumnInfo Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" Index="2" Caption="Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" Index="3" Caption="Email" IsNewNode="True" />
+        <ColumnInfo Id="id_ct_phieu_xuat.so_seri" PropertyName="id_ct_phieu_xuat.so_seri" Index="4" Caption="Seri" IsNewNode="True" />
+        <ColumnInfo Id="id_ct_phieu_xuat.id_san_pham.ten_san_pham" PropertyName="id_ct_phieu_xuat.id_san_pham.ten_san_pham" Index="5" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="ngay_bao_hanh" Index="6" Caption="Ngày Bảo Hành" />
+        <ColumnInfo Id="noi_dung_bh" Index="7" Caption="Nội Dung BH" />
       </Columns>
     </ListView>
-    <DetailView Id="chuc_vus_DetailView" Caption="Chức Vụ">
+    <ListView Id="bao_hanhs_LookupListView" Caption="Bảo Hành" />
+    <DetailView Id="chi_tiet_san_phams_DetailView" Caption="Chi Tiết Sản Phẩm">
+      <Items>
+        <PropertyEditor Id="id_don_hang" Caption="ID Đơn Hàng" />
+        <PropertyEditor Id="id_khuyen_mai" Caption="ID Khuyến Mãi" />
+        <PropertyEditor Id="id_san_pham" Caption="ID Sản Phẩm" />
+        <PropertyEditor Id="id_san_pham.chi_tiet_san_phamss" PropertyName="id_san_pham.chi_tiet_san_phamss" View="san_phams_chi_tiet_san_phamss_ListView" IsNewNode="True" />
+        <PropertyEditor Id="id_san_pham.id_danh_muc" PropertyName="id_san_pham.id_danh_muc" Caption="ID Danh Mục" IsNewNode="True" />
+        <PropertyEditor Id="id_san_pham.id_danh_muc.ten_danh_muc" PropertyName="id_san_pham.id_danh_muc.ten_danh_muc" IsNewNode="True" />
+        <PropertyEditor Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <PropertyEditor Id="so_seri" Caption="Seri" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="chi_tiet_san_phams" RelativeSize="100" Caption="Chi Tiết Sản Phẩm">
+              <LayoutGroup Id="chi_tiet_san_phams_col1" RelativeSize="49.85279685966634">
+                <LayoutItem Id="so_seri" RelativeSize="3.9473684210526314" />
+                <LayoutItem Id="id_san_pham" RelativeSize="2.8508771929824563" />
+                <LayoutItem Id="id_san_pham.ten_san_pham" ViewItem="id_san_pham.ten_san_pham" Index="2" RelativeSize="93.20175438596492" IsNewNode="True" />
+                <LayoutItem Id="id_khuyen_mai" Index="5" RelativeSize="80.96551724137932" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="chi_tiet_san_phams_col2" RelativeSize="50.14720314033366">
+                <LayoutItem Id="id_khuyen_mai" ViewItem="id_khuyen_mai" Index="0" RelativeSize="3.9473684210526314" IsNewNode="True" />
+                <LayoutItem Id="id_don_hang" RelativeSize="96.05263157894737" Index="1" />
+                <LayoutItem Id="tinh_trang" RelativeSize="3.586206896551724" Index="1" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="chi_tiet_san_phams_ListView" Caption="Danh Sách Chi Tiết Sản Phẩm">
+      <Columns>
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id_san_pham" Caption="ID Sản Phẩm" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="1" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="so_seri" Index="2" Caption="Seri" />
+        <ColumnInfo Id="id_khuyen_mai" Index="3" Caption="ID Khuyến Mãi" />
+        <ColumnInfo Id="id_khuyen_mai.ten_khuyen_mai" PropertyName="id_khuyen_mai.ten_khuyen_mai" Index="4" Caption="Tên Khuyến Mãi" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="chi_tiet_san_phams_LookupListView" Caption="Chi Tiết Sản Phẩm" />
+    <DetailView Id="chuc_vus_DetailView" Caption="Chi Tiết Chức Vụ">
       <Items>
         <PropertyEditor Id="id" Caption="ID" />
         <PropertyEditor Id="nhan_vienss" Caption="Danh Sách Nhân Viên" />
@@ -61,41 +339,120 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="chuc_vus_ListView" Caption="Chức Vụ">
+    <ListView Id="chuc_vus_ListView" Caption="Danh Sách Chức Vụ">
       <Columns>
-        <ColumnInfo Id="tinh_trang" Width="90" Index="-1" />
-        <ColumnInfo Id="ten_chuc_vu" Width="1000" Caption="Tên Chức Vụ" MaxLength="700" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Caption="ID" Index="0" />
+        <ColumnInfo Id="ten_chuc_vu" Caption="Tên Chức Vụ" Index="1" />
       </Columns>
     </ListView>
     <ListView Id="chuc_vus_LookupListView" Caption="Chức Vụ" />
     <ListView Id="chuc_vus_nhan_vienss_ListView" Caption="Nhân Viên">
       <Columns>
-        <ColumnInfo Id="gioi_tinh" Width="72" Index="-1" Caption="Giới Tính" />
-        <ColumnInfo Id="id_chuc_vu" Width="87" Index="-1" Caption="Chức Vụ" PropertyName="id_chuc_vu.ten_chuc_vu" />
-        <ColumnInfo Id="ngay_sinh" Width="81" Index="-1" Caption="Ngày Sinh" />
-        <ColumnInfo Id="tinh_trang" Width="82" Index="-1" />
-        <ColumnInfo Id="ho_ten" Width="230" SortIndex="0" SortOrder="Ascending" Caption="Họ Tên" MaxLength="200" />
-        <ColumnInfo Id="id_chuc_vu.ten_chuc_vu" PropertyName="id_chuc_vu.ten_chuc_vu" Index="1" Width="200" Caption="Chức Vụ" MaxLength="200" IsNewNode="True" />
-        <ColumnInfo Id="so_dien_thoai" Width="200" Index="2" Caption="Số Điện Thoại" />
-        <ColumnInfo Id="dia_chi" Width="300" Index="3" Caption="Địa Chỉ" />
-        <ColumnInfo Id="email" Width="300" Index="4" Caption="Email" />
-        <ColumnInfo Id="mat_khau" Width="80" Index="5" Caption="Mật Khẩu" />
+        <ColumnInfo Id="gioi_tinh" Caption="Giới Tính" Index="-1" />
+        <ColumnInfo Id="ngay_sinh" Caption="Ngày Sinh" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Caption="ID" Index="0" />
+        <ColumnInfo Id="ho_ten" Caption="Họ Tên" Index="1" />
+        <ColumnInfo Id="id_chuc_vu" Caption="ID Chức Vụ" Index="2" />
+        <ColumnInfo Id="id_chuc_vu.ten_chuc_vu" PropertyName="id_chuc_vu.ten_chuc_vu" Index="3" Caption="Tên Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="so_dien_thoai" Caption="Số Điện Thoại" Index="4" />
+        <ColumnInfo Id="dia_chi" Caption="Địa Chỉ" Index="5" />
+        <ColumnInfo Id="email" Caption="Email" Index="6" />
+        <ColumnInfo Id="mat_khau" Caption="Mật Khẩu" Index="7" />
       </Columns>
     </ListView>
-    <DetailView Id="CT_don_hangs_DetailView" Caption="Chi Tiết Đơn Hàng" />
+    <DetailView Id="CT_don_hangs_DetailView">
+      <Items>
+        <PropertyEditor Id="id_don_hang" Caption="ID Đơn Hàng" />
+        <PropertyEditor Id="id_don_hang.ngay" PropertyName="id_don_hang.ngay" Caption="Ngày" IsNewNode="True" />
+        <PropertyEditor Id="id_san_pham.chi_tiet_san_phamss" PropertyName="id_san_pham.chi_tiet_san_phamss" View="san_phams_chi_tiet_san_phamss_ListView" IsNewNode="True" />
+        <PropertyEditor Id="thanh_tien" Caption="Thành Tiền" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CT_don_hangs" RelativeSize="100" Direction="Vertical" Caption="Chi Tiết Đơn Hàng">
+              <LayoutGroup Id="CT_don_hangs_col2" ShowCaption="False" Index="0" RelativeSize="10.50328227571116" Caption="CT_don_hangs_col2" Direction="Vertical" IsNewNode="True" Removed="True">
+                <LayoutItem Id="id_don_hang" ViewItem="id_don_hang" Index="0" RelativeSize="37.5" IsNewNode="True" />
+                <LayoutItem Id="id_don_hang.ngay" ViewItem="id_don_hang.ngay" Index="1" RelativeSize="27.083333333333332" IsNewNode="True" />
+                <LayoutItem Id="thanh_tien" ViewItem="thanh_tien" Index="2" RelativeSize="35.416666666666664" IsNewNode="True" />
+              </LayoutGroup>
+              <TabbedGroup Id="Item2" CaptionLocation="Top" Index="1" RelativeSize="89.49671772428884" IsNewNode="True">
+                <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Sản Phẩm" IsNewNode="True">
+                  <LayoutItem Id="id_san_pham.chi_tiet_san_phamss" ViewItem="id_san_pham.chi_tiet_san_phamss" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <LayoutGroup Id="CT_don_hangs_col1" RelativeSize="19.92619926199262" Removed="True">
+                <LayoutItem Id="id_san_pham" Index="3" RelativeSize="88.13793103448276" />
+                <LayoutItem Id="id" RelativeSize="4.689655172413793" />
+                <LayoutItem Id="id_don_hang" RelativeSize="3.586206896551724" />
+                <LayoutItem Id="so_seri" RelativeSize="3.586206896551724" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="CT_don_hangs_ListView" Caption="Chi Tiết Đơn Hàng" />
     <ListView Id="CT_don_hangs_LookupListView" Caption="Chi Tiết Đơn Hàng" />
-    <DetailView Id="CT_phieu_nhaps_DetailView" Caption="Chi Tiết Hóa Đơn Nhập Kho" />
-    <ListView Id="CT_phieu_nhaps_ListView" Caption="Chi Tiết Hóa Đơn Nhập Kho" />
-    <ListView Id="CT_phieu_nhaps_LookupListView" Caption="Chi Tiết Hóa Đơn Nhập Kho" />
-    <DetailView Id="danh_mucs_DetailView">
+    <DetailView Id="CT_phieu_nhaps_DetailView" Caption="Chi Tiết Phiếu Nhập">
+      <Items>
+        <PropertyEditor Id="don_gia" Caption="Đơn Giá" />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="id_phieu_nhap" Caption="ID Hóa Đơn" />
+        <PropertyEditor Id="id_phieu_nhap.id_nhan_vien" PropertyName="id_phieu_nhap.id_nhan_vien" Caption="ID Nhân Viên" IsNewNode="True" />
+        <PropertyEditor Id="id_phieu_nhap.id_nhan_vien.ho_ten" PropertyName="id_phieu_nhap.id_nhan_vien.ho_ten" Caption="Nhân Viên" IsNewNode="True" />
+        <PropertyEditor Id="id_phieu_nhap.ma_phieu_nhap" PropertyName="id_phieu_nhap.ma_phieu_nhap" Caption="Mã Hóa Đơn Nhập" IsNewNode="True" />
+        <PropertyEditor Id="id_san_pham" Caption="ID Sản Phẩm" />
+        <PropertyEditor Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Caption="Sản Phẩm" IsNewNode="True" />
+        <PropertyEditor Id="so_luong" Caption="Số Lượng" />
+        <PropertyEditor Id="thanh_tien" Caption="Thành Tiền" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CT_phieu_nhaps" RelativeSize="100">
+              <LayoutGroup Id="CT_phieu_nhaps_col1" RelativeSize="49.85279685966634">
+                <LayoutItem Id="id" RelativeSize="3.938730853391685" />
+                <LayoutItem Id="id_phieu_nhap" ViewItem="id_phieu_nhap" Index="1" RelativeSize="2.8446389496717726" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="id_phieu_nhap.ma_phieu_nhap" ViewItem="id_phieu_nhap.ma_phieu_nhap" Index="2" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="id_san_pham" ViewItem="id_san_pham" Index="3" RelativeSize="2.8446389496717726" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="id_san_pham.ten_san_pham" ViewItem="id_san_pham.ten_san_pham" Index="4" RelativeSize="87.527352297593" IsNewNode="True" />
+                <LayoutItem Id="so_luong" Index="5" RelativeSize="80.96551724137932" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CT_phieu_nhaps_col2" RelativeSize="50.14720314033366">
+                <LayoutItem Id="id_phieu_nhap.id_nhan_vien" ViewItem="id_phieu_nhap.id_nhan_vien" Index="0" RelativeSize="3.938730853391685" IsNewNode="True" />
+                <LayoutItem Id="id_phieu_nhap.id_nhan_vien.ho_ten" ViewItem="id_phieu_nhap.id_nhan_vien.ho_ten" Index="1" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="so_luong" ViewItem="so_luong" Index="2" RelativeSize="2.8446389496717726" IsNewNode="True" />
+                <LayoutItem Id="don_gia" RelativeSize="2.8446389496717726" Index="3" />
+                <LayoutItem Id="tinh_trang" RelativeSize="88.13793103448276" Index="3" Removed="True" />
+                <LayoutItem Id="thanh_tien" RelativeSize="87.527352297593" Index="4" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CT_phieu_xuats_bao_hanhss_ListView" Caption="Bảo Hành">
+      <Columns>
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="id_ct_phieu_xuat" Index="1" Caption="ID Chi Tiết HĐ" />
+        <ColumnInfo Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.ho_ten" Index="2" Caption="Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" PropertyName="id_ct_phieu_xuat.id_phieu_xuat.id_khach_hang.email" Index="3" Caption="Email" IsNewNode="True" />
+        <ColumnInfo Id="ngay_bao_hanh" Index="4" Caption="Ngày Bảo Hành" />
+        <ColumnInfo Id="noi_dung_bh" Index="5" Caption="Nội Dung BH" />
+      </Columns>
+    </ListView>
+    <DetailView Id="danh_mucs_DetailView" Caption="Chi Tiết Danh Mục">
       <Items>
         <PropertyEditor Id="id" Caption="ID" />
         <PropertyEditor Id="ten_danh_muc" Caption="Tên Danh Mục: " />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="12.448132780082988">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="22.058823529411764">
             <LayoutGroup Id="danh_mucs" Caption="Danh Mục" RelativeSize="100" Direction="Vertical">
               <LayoutGroup Id="danh_mucs_col1" RelativeSize="100">
                 <LayoutItem Id="id" RelativeSize="50" />
@@ -108,28 +465,28 @@
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="san_phamss_Group" Direction="Vertical" RelativeSize="87.55186721991701" Caption="Sản Phẩm">
+          <LayoutGroup Id="san_phamss_Group" Direction="Vertical" RelativeSize="77.94117647058823" Caption="Danh Sách Sản Phẩm">
             <LayoutItem Id="san_phamss" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="danh_mucs_ListView" Caption="Danh Mục">
+    <ListView Id="danh_mucs_ListView" Caption="Danh Sách Danh Mục">
       <Columns>
-        <ColumnInfo Id="id" Caption="Mã Danh Mục" />
-        <ColumnInfo Id="link_anh" SortIndex="0" SortOrder="Descending" Index="-1" />
-        <ColumnInfo Id="tinh_trang" Index="-1" Caption="Tình Trạng" Width="93" />
-        <ColumnInfo Id="ten_danh_muc" SortIndex="-1" SortOrder="None" Caption="Tên Danh Mục" Width="600" />
-        <ColumnInfo Id="id_danh_muc_cha" Caption="Danh Mục Cha" Width="200" />
+        <ColumnInfo Id="link_anh" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Caption="ID" Index="0" />
+        <ColumnInfo Id="ten_danh_muc" Caption="Tên Danh Mục" Index="1" />
+        <ColumnInfo Id="id_danh_muc_cha" Caption="ID Danh Mục Cha" Index="2" />
       </Columns>
     </ListView>
-    <ListView Id="danh_mucs_san_phamss_ListView">
+    <ListView Id="danh_mucs_san_phamss_ListView" Caption="Sản Phẩm">
       <Columns>
         <ColumnInfo Id="id_danh_muc_cha" Index="-1" />
         <ColumnInfo Id="link_anh" Index="-1" />
         <ColumnInfo Id="tinh_trang" Index="-1" />
         <ColumnInfo Id="ten_san_pham" SortIndex="0" SortOrder="Ascending" Caption="Tên Sản Phẩm" Width="131" />
-        <ColumnInfo Id="id_danh_muc" PropertyName="id_danh_muc.ten_danh_muc" Caption="Tên Danh Mục" Index="1" Width="146" />
+        <ColumnInfo Id="id_danh_muc" PropertyName="id_danh_muc" Caption="Tên Danh Mục" Index="1" Width="146" />
         <ColumnInfo Id="so_luong" Caption="Số Lượng" Index="2" />
         <ColumnInfo Id="don_gia" Caption="Đơn Giá" Index="3" />
         <ColumnInfo Id="thoi_han_bao_hanh" Caption="Thời Hạn Bảo Hành" Index="4" />
@@ -137,156 +494,396 @@
         <ColumnInfo Id="mo_ta" Caption="Mô Tả" Index="6" />
       </Columns>
     </ListView>
-    <ListView Id="don_hangs_CT_don_hangss_ListView" Caption="Chi Tiết Đơn Hàng">
+    <ListView Id="don_hangs_chi_tiet_san_phamss_ListView" Caption="Danh Sách Sản Phẩm">
       <Columns>
-        <ColumnInfo Id="id_don_hang" Caption="Đơn Hàng" />
-        <ColumnInfo Id="so_seri" Caption="Seri" />
-        <ColumnInfo Id="id_san_pham" Caption="Tên Sản Phẩm" PropertyName="id_san_pham.ten_san_pham" />
-        <ColumnInfo Id="ngay_bd_bh" Caption="Bắt Đầu BH" />
-        <ColumnInfo Id="ngay_het_bh" Caption="Hết BH" />
-        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" />
+        <ColumnInfo Id="id_don_hang" Index="-1" />
+        <ColumnInfo Id="id_khuyen_mai" Index="-1" />
+        <ColumnInfo Id="id_san_pham" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="so_seri" Index="0" Caption="Seri" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="1" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai.ten_khuyen_mai" PropertyName="id_khuyen_mai.ten_khuyen_mai" Index="2" Caption="Khuyến Mãi" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai.ngay_bat_dau" PropertyName="id_khuyen_mai.ngay_bat_dau" Index="3" Caption="Ngày Bắt Đầu" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai.ngay_ket_thuc" PropertyName="id_khuyen_mai.ngay_ket_thuc" Index="4" Caption="Ngày Kết Thúc" IsNewNode="True" />
       </Columns>
     </ListView>
-    <DetailView Id="don_hangs_DetailView">
+    <ListView Id="don_hangs_CT_don_hangss_ListView" Caption="Chi Tiết Đơn Hàng">
+      <Columns>
+        <ColumnInfo Id="id_don_hang" Index="-1" Caption="ID Đơn Hàng" />
+        <ColumnInfo Id="id_san_pham" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="so_seri" Index="1" Caption="Seri" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="2" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="ngay_bd_bh" Index="3" Caption="Ngày Bắt Đầu BH" />
+        <ColumnInfo Id="ngay_het_bh" Index="4" Caption="Ngày Hết BH" />
+        <ColumnInfo Id="thanh_tien" Index="5" Caption="Thành Tiền" />
+      </Columns>
+    </ListView>
+    <DetailView Id="don_hangs_DetailView" Caption="Chi Tiết Đơn Hàng">
       <Items>
-        <PropertyEditor Id="id_don_vi_vc" Caption="Vận Chuyển" />
-        <PropertyEditor Id="id_khach_hang" Caption="Tên Khách Hàng" PropertyName="id_khach_hang.ho_ten" />
-        <PropertyEditor Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" />
+        <PropertyEditor Id="CT_don_hangss" Caption="Chi Tiết Đơn Hàng" />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="id_don_vi_vc" Caption="ID ĐVVC" />
+        <PropertyEditor Id="id_don_vi_vc.ten_don_vi" PropertyName="id_don_vi_vc.ten_don_vi" Caption="ĐVVC" IsNewNode="True" />
+        <PropertyEditor Id="id_khach_hang" Caption="ID Khách Hàng" />
+        <PropertyEditor Id="id_khach_hang.don_hangss" PropertyName="id_khach_hang.don_hangss" View="khach_hangs_don_hangss_ListView" IsNewNode="True" />
+        <PropertyEditor Id="id_khach_hang.ho_ten" PropertyName="id_khach_hang.ho_ten" Caption="Khách Hàng" IsNewNode="True" />
+        <PropertyEditor Id="id_nhan_vien" Caption="ID Nhân Viên" />
+        <PropertyEditor Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Caption="Nhân Viên" IsNewNode="True" />
         <PropertyEditor Id="ngay" Caption="Ngày" />
         <PropertyEditor Id="phuong_thuc_thanh_toan" Caption="PTTT" />
         <PropertyEditor Id="thanh_tien" Caption="Thành Tiền" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20.53941908713693">
+            <LayoutGroup Id="don_hangs" RelativeSize="100" Caption="Đơn Hàng">
+              <LayoutGroup Id="don_hangs_col1" RelativeSize="49.656526005888125">
+                <LayoutItem Id="id" RelativeSize="24" />
+                <LayoutItem Id="id_khach_hang" RelativeSize="17.333333333333332" Index="1" />
+                <LayoutItem Id="id_khach_hang.ho_ten" ViewItem="id_khach_hang.ho_ten" Index="2" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="id_don_vi_vc" RelativeSize="17.333333333333332" Index="3" />
+                <LayoutItem Id="id_don_vi_vc.ten_don_vi" ViewItem="id_don_vi_vc.ten_don_vi" Index="4" RelativeSize="24" IsNewNode="True" />
+                <LayoutItem Id="ngay" RelativeSize="15.116279069767442" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="don_hangs_col2" RelativeSize="50.343473994111875">
+                <LayoutItem Id="ngay" ViewItem="ngay" Index="0" RelativeSize="24" IsNewNode="True" />
+                <LayoutItem Id="id_nhan_vien" RelativeSize="17.333333333333332" Index="1" />
+                <LayoutItem Id="id_nhan_vien.ho_ten" ViewItem="id_nhan_vien.ho_ten" Index="2" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="thanh_tien" RelativeSize="17.333333333333332" Index="3" />
+                <LayoutItem Id="phuong_thuc_thanh_toan" RelativeSize="24" Index="4" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="79.46058091286307">
+            <LayoutGroup Id="chi_tiet_san_phamss" Index="0" RelativeSize="100" Caption="Danh Sách Sản Phẩm">
+              <LayoutItem Id="chi_tiet_san_phamss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CT_don_hangss" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
-    <ListView Id="don_hangs_ListView">
+    <ListView Id="don_hangs_ListView" Caption="Danh Sách Đơn Hàng">
       <Columns>
-        <ColumnInfo Id="ngay" Caption="Ngày" />
-        <ColumnInfo Id="id_khach_hang" Caption="Tên Khách Hàng" PropertyName="id_khach_hang.ho_ten" />
-        <ColumnInfo Id="id_don_vi_vc" Caption="Vận Chuyển" PropertyName="id_don_vi_vc.ten_don_vi" />
-        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" />
-        <ColumnInfo Id="phuong_thuc_thanh_toan" Caption="PTTT" />
+        <ColumnInfo Id="id" Caption="ID" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="ngay" Caption="Ngày" Index="0" />
+        <ColumnInfo Id="id_khach_hang" Caption="ID Khách Hàng" Index="1" />
+        <ColumnInfo Id="id_khach_hang.ho_ten" PropertyName="id_khach_hang.ho_ten" Index="2" Caption="Tên Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="id_don_vi_vc" Caption="ID ĐV Vận Chuyển" Index="3" />
+        <ColumnInfo Id="id_don_vi_vc.ten_don_vi" PropertyName="id_don_vi_vc.ten_don_vi" Index="4" Caption="Tên ĐVVC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Caption="ID Nhân Viên" Index="5" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="6" Caption="Tên Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" Index="7" />
+        <ColumnInfo Id="phuong_thuc_thanh_toan" Caption="PTTT" Index="8" />
       </Columns>
     </ListView>
-    <ListView Id="khach_hangs_don_hangss_ListView" IsGroupPanelVisible="True">
-      <Columns>
-        <ColumnInfo Id="id_khach_hang" Caption="Khách Hàng" PropertyName="id_khach_hang.ho_ten" />
-        <ColumnInfo Id="tinh_trang" SortIndex="0" SortOrder="Ascending" Index="-1" />
-        <ColumnInfo Id="ngay" Caption="Ngày" Width="213" />
-        <ColumnInfo Id="id_don_vi_vc" Caption="Vận Chuyển" PropertyName="id_don_vi_vc.ten_don_vi" Width="232" />
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" Width="257" />
-        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" Width="186" />
-        <ColumnInfo Id="phuong_thuc_thanh_toan" Caption="PTTT" Width="198" />
-      </Columns>
-    </ListView>
-    <DetailView Id="nha_cung_caps_DetailView" Caption="Nhà Cung Cấp">
+    <DetailView Id="don_vi_van_chuyens_DetailView" Caption="Chi Tiết ĐVVC">
       <Items>
         <PropertyEditor Id="dia_chi" Caption="Địa Chỉ" />
+        <PropertyEditor Id="don_hangss" Caption="Đơn Hàng" />
         <PropertyEditor Id="email" Caption="Email" />
         <PropertyEditor Id="id" Caption="ID" />
         <PropertyEditor Id="so_dien_thoai" Caption="Số Điện Thoại" />
-        <PropertyEditor Id="ten_ncc" Caption="Tên" />
+        <PropertyEditor Id="ten_don_vi" Caption="Tên Công Ty" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
           <LayoutGroup Id="SimpleEditors" RelativeSize="15.145228215767634">
-            <LayoutGroup Id="nha_cung_caps" Caption="Nhà Cung Cấp" RelativeSize="100">
-              <LayoutGroup Id="nha_cung_caps_col1" RelativeSize="49.89878542510122">
+            <LayoutGroup Id="don_vi_van_chuyens" RelativeSize="100">
+              <LayoutGroup Id="don_vi_van_chuyens_col1" RelativeSize="50">
                 <LayoutItem Id="id" RelativeSize="36.734693877551024" />
-                <LayoutItem Id="ten_ncc" RelativeSize="26.53061224489796" />
+                <LayoutItem Id="ten_don_vi" RelativeSize="26.53061224489796" />
                 <LayoutItem Id="email" RelativeSize="36.734693877551024" />
               </LayoutGroup>
-              <LayoutGroup Id="nha_cung_caps_col2" RelativeSize="50.10121457489878">
+              <LayoutGroup Id="don_vi_van_chuyens_col2" RelativeSize="50">
                 <LayoutItem Id="so_dien_thoai" RelativeSize="36.734693877551024" />
                 <LayoutItem Id="dia_chi" RelativeSize="63.265306122448976" />
-                <LayoutItem Id="tinh_trang" RelativeSize="36.170212765957444" Removed="True" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="phieu_nhap_khoss_Group" Direction="Vertical" RelativeSize="84.85477178423237" Caption="Hóa Đơn Nhập Kho">
-            <LayoutItem Id="phieu_nhap_khoss" RelativeSize="100" />
+          <LayoutGroup Id="don_hangss_Group" Direction="Vertical" RelativeSize="84.85477178423237">
+            <LayoutItem Id="don_hangss" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="nha_cung_caps_ListView" Caption="Nhà Cung Cấp">
+    <ListView Id="don_vi_van_chuyens_don_hangss_ListView" Caption="Đơn Hàng - ĐVVC">
       <Columns>
-        <ColumnInfo Id="tinh_trang" Index="-1" />
-        <ColumnInfo Id="id" Caption="ID" Index="0" />
-        <ColumnInfo Id="ten_ncc" Caption="Tên Nhà Cung Cấp" Index="1" />
-        <ColumnInfo Id="email" Caption="Email" Index="2" />
-        <ColumnInfo Id="so_dien_thoai" Caption="Số Điện Thoại" Index="3" />
-        <ColumnInfo Id="dia_chi" Caption="Địa Chỉ" Index="4" />
-      </Columns>
-    </ListView>
-    <ListView Id="nha_cung_caps_LookupListView" Caption="Nhà Cung Cấp" />
-    <ListView Id="nha_cung_caps_phieu_nhap_khoss_ListView" Caption="Hóa Đơn Nhập Kho">
-      <Columns>
-        <ColumnInfo Id="id_nha_cung_cap" Caption="Nhà Cung Cấp" PropertyName="id_nha_cung_cap.ten_ncc" />
         <ColumnInfo Id="tinh_trang" Index="-1" />
         <ColumnInfo Id="id" Index="0" Caption="ID" />
-        <ColumnInfo Id="ma_phieu_nhap" Caption="Mã Hóa Đơn" Index="1" />
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" Index="2" />
-        <ColumnInfo Id="ghi_chu" Caption="Ghi Chú" Index="3" />
-        <ColumnInfo Id="tong_tien" Caption="Tổng Tiền" Index="4" />
+        <ColumnInfo Id="ngay" Index="1" Caption="Ngày" />
+        <ColumnInfo Id="id_khach_hang" Index="2" Caption="ID Khách Hàng" />
+        <ColumnInfo Id="id_khach_hang.ho_ten" PropertyName="id_khach_hang.ho_ten" Index="3" Caption="Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="id_don_vi_vc" Index="4" Caption="ID ĐVVC" />
+        <ColumnInfo Id="id_don_vi_vc.ten_don_vi" PropertyName="id_don_vi_vc.ten_don_vi" Index="5" Caption="ĐVVC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Index="6" Caption="ID Nhân Viên" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="7" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="8" Caption="Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="thanh_tien" Index="9" Caption="Thành Tiền" />
+        <ColumnInfo Id="phuong_thuc_thanh_toan" Index="10" Caption="PTTT" />
       </Columns>
     </ListView>
-    <DetailView Id="nhan_viens_DetailView" Caption="Nhân Viên">
+    <ListView Id="don_vi_van_chuyens_ListView" Caption="Danh Sách Đơn Vị Vận Chuyển">
+      <Columns>
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="ten_don_vi" Index="1" Caption="Tên Công Ty" />
+        <ColumnInfo Id="email" Index="2" Caption="Email" />
+        <ColumnInfo Id="so_dien_thoai" Index="3" Caption="Số Điện Thoại" />
+        <ColumnInfo Id="dia_chi" Index="4" Caption="Địa Chỉ" />
+      </Columns>
+    </ListView>
+    <ListView Id="don_vi_van_chuyens_LookupListView" Caption="Đơn Vị Vận Chuyển" />
+    <DetailView Id="khach_hangs_DetailView" Caption="Chi Tiết Khách Hàng">
       <Items>
         <PropertyEditor Id="dia_chi" Caption="Địa Chỉ" />
+        <PropertyEditor Id="don_hangss" Caption="Danh Sách Đơn Hàng" />
         <PropertyEditor Id="email" Caption="Email" />
+        <PropertyEditor Id="gioi_tinh" Caption="Giới Tính" />
         <PropertyEditor Id="ho_ten" Caption="Họ Tên" />
         <PropertyEditor Id="id" Caption="ID" />
-        <PropertyEditor Id="id_chuc_vu.ten_chuc_vu" PropertyName="id_chuc_vu.ten_chuc_vu" Caption="Chức Vụ" IsNewNode="True" />
         <PropertyEditor Id="mat_khau" Caption="Mật Khẩu" />
+        <PropertyEditor Id="ngay_sinh" Caption="Ngày Sinh" />
+        <PropertyEditor Id="phieu_xuat_khoss" Caption="Đơn Hàng (Phiếu Xuất)" />
         <PropertyEditor Id="so_dien_thoai" Caption="Số Điện Thoại" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="17.842323651452283">
-            <LayoutGroup Id="nhan_viens" RelativeSize="100" Caption="Nhân Viên">
-              <LayoutGroup Id="nhan_viens_col1" RelativeSize="49.831271091113614">
-                <LayoutItem Id="id" RelativeSize="29.032258064516128" />
-                <LayoutItem Id="ho_ten" RelativeSize="20.967741935483872" />
-                <LayoutItem Id="id_chuc_vu.ten_chuc_vu" ViewItem="id_chuc_vu.ten_chuc_vu" Index="2" RelativeSize="20.967741935483872" IsNewNode="True" />
-                <LayoutItem Id="dia_chi" RelativeSize="29.032258064516128" Index="3" />
-                <LayoutItem Id="ngay_sinh" Removed="True" />
-                <LayoutItem Id="so_dien_thoai" RelativeSize="17.80821917808219" Removed="True" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="15.145228215767634">
+            <LayoutGroup Id="khach_hangs" RelativeSize="100">
+              <LayoutGroup Id="khach_hangs_col1" RelativeSize="50">
+                <LayoutItem Id="ho_ten" RelativeSize="36.734693877551024" Index="0" />
+                <LayoutItem Id="so_dien_thoai" RelativeSize="26.53061224489796" Index="1" />
+                <LayoutItem Id="dia_chi" RelativeSize="36.734693877551024" Index="2" />
+                <LayoutItem Id="id" RelativeSize="28.333333333333332" Removed="True" />
+                <LayoutItem Id="ngay_sinh" RelativeSize="23.28767123287671" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="nhan_viens_col2" RelativeSize="50.168728908886386" Caption="nhan_viens_col2">
-                <LayoutItem Id="so_dien_thoai" ViewItem="so_dien_thoai" Index="0" RelativeSize="29.032258064516128" IsNewNode="True" />
-                <LayoutItem Id="email" RelativeSize="20.967741935483872" Index="1" />
-                <LayoutItem Id="id_chuc_vu" RelativeSize="21.666666666666668" Index="2" Removed="True" />
-                <LayoutItem Id="mat_khau" ViewItem="mat_khau" Index="2" RelativeSize="50" IsNewNode="True" Removed="True" />
-                <LayoutItem Id="tinh_trang" RelativeSize="50" Index="2" Removed="True" />
-                <LayoutItem Id="gioi_tinh" RelativeSize="23.28767123287671" Removed="True" />
+              <LayoutGroup Id="khach_hangs_col2" RelativeSize="50">
+                <LayoutItem Id="ngay_sinh" ViewItem="ngay_sinh" Index="0" RelativeSize="36.734693877551024" IsNewNode="True" />
+                <LayoutItem Id="email" Index="1" RelativeSize="26.53061224489796" />
+                <LayoutItem Id="mat_khau" Index="2" RelativeSize="36.734693877551024" />
+                <LayoutItem Id="tinh_trang" Index="2" RelativeSize="58.9041095890411" ShowCaption="True" Removed="True" />
+                <LayoutItem Id="gioi_tinh" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="82.15767634854772">
-            <LayoutGroup Id="don_hangss" RelativeSize="100" Caption="Đơn Hàng">
+          <TabbedGroup Id="Tabs" RelativeSize="84.85477178423237">
+            <LayoutGroup Id="don_hangss" RelativeSize="100">
               <LayoutItem Id="don_hangss" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="phieu_nhap_khoss" RelativeSize="100" Caption="Hóa Đơn Nhập Kho">
-              <LayoutItem Id="phieu_nhap_khoss" RelativeSize="100" />
-            </LayoutGroup>
-            <LayoutGroup Id="phieu_xuat_khoss" RelativeSize="100" Caption="Hóa Đơn Bán Hàng">
+            <LayoutGroup Id="phieu_xuat_khoss" RelativeSize="100" Removed="True">
               <LayoutItem Id="phieu_xuat_khoss" RelativeSize="100" />
             </LayoutGroup>
           </TabbedGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="nhan_viens_don_hangss_ListView" Caption="Đơn Hàng">
+    <ListView Id="khach_hangs_don_hangss_ListView" Caption="Đơn Hàng - KH">
       <Columns>
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" />
-        <ColumnInfo Id="tinh_trang" Width="82" Index="-1" />
-        <ColumnInfo Id="ngay" Width="176" SortIndex="-1" SortOrder="None" Caption="Ngày" />
-        <ColumnInfo Id="id_khach_hang" Width="402" Caption="Khách Hàng" PropertyName="id_khach_hang.ho_ten" />
-        <ColumnInfo Id="id_don_vi_vc" Width="383" Caption="Vận Chuyển" PropertyName="id_don_vi_vc.ten_don_vi" />
-        <ColumnInfo Id="thanh_tien" Width="167" Caption="Thành Tiền" />
-        <ColumnInfo Id="phuong_thuc_thanh_toan" Width="157" Caption="PTTT" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="id_khach_hang" Index="-1" Caption="ID Khách Hàng" />
+        <ColumnInfo Id="id_khach_hang.ho_ten" PropertyName="id_khach_hang.ho_ten" Index="-1" Caption="Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="ngay" Caption="Ngày" Index="1" />
+        <ColumnInfo Id="id_don_vi_vc" Index="2" Caption="ID ĐVVC" />
+        <ColumnInfo Id="id_don_vi_vc.ten_don_vi" PropertyName="id_don_vi_vc.ten_don_vi" Index="3" Caption="ĐVVC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Index="4" Caption="ID Nhân Viên" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="5" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="6" Caption="Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="thanh_tien" Index="7" Caption="Thành Tiền" />
+        <ColumnInfo Id="phuong_thuc_thanh_toan" Index="8" Caption="PTTT" />
       </Columns>
     </ListView>
-    <ListView Id="nhan_viens_ListView" Caption="Nhân Viên">
+    <ListView Id="khach_hangs_ListView" Caption="Danh Sách Khách Hàng">
+      <Columns>
+        <ColumnInfo Id="gioi_tinh" Index="-1" Caption="Giới Tính" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="ho_ten" Index="1" Caption="Họ Tên" />
+        <ColumnInfo Id="so_dien_thoai" Index="2" Caption="Số Điện Thoại" />
+        <ColumnInfo Id="dia_chi" Index="3" Caption="Địa Chỉ" />
+        <ColumnInfo Id="ngay_sinh" Index="4" Caption="Ngày Sinh" />
+        <ColumnInfo Id="email" Index="5" Caption="Email" />
+        <ColumnInfo Id="mat_khau" Index="6" Caption="Mật Khẩu" />
+      </Columns>
+    </ListView>
+    <ListView Id="khuyen_mais_chi_tiet_san_phamss_ListView" Caption="Chi Tiết Sản Phẩm">
+      <Columns>
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id_san_pham" Caption="ID Sản Phẩm" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="1" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai" Index="2" Caption="ID Khuyến Mãi" />
+        <ColumnInfo Id="id_khuyen_mai.ten_khuyen_mai" PropertyName="id_khuyen_mai.ten_khuyen_mai" Index="3" Caption="Tên Khuyến Mãi" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="khuyen_mais_DetailView" Caption="Chi Tiết Khuyến Mãi">
+      <Items>
+        <PropertyEditor Id="chi_tiet_san_phamss" Caption="Danh Sách Sản Phẩm" />
+        <PropertyEditor Id="dieu_kien_khuyen_mai" Caption="Điều Kiện" />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="ngay_bat_dau" Caption="Ngày Bắt Đầu" />
+        <PropertyEditor Id="ngay_ket_thuc" Caption="Ngày Kết Thúc" />
+        <PropertyEditor Id="ten_khuyen_mai" Caption="Tên Khuyến Mãi" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="12.448132780082988">
+            <LayoutGroup Id="khuyen_mais" RelativeSize="100">
+              <LayoutGroup Id="khuyen_mais_col1" RelativeSize="50">
+                <LayoutItem Id="ten_khuyen_mai" RelativeSize="50" Index="0" />
+                <LayoutItem Id="ngay_bat_dau" Index="1" RelativeSize="50" />
+                <LayoutItem Id="id" RelativeSize="36.170212765957444" Removed="True" />
+                <LayoutItem Id="link_anh" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="khuyen_mais_col2" RelativeSize="50">
+                <LayoutItem Id="ngay_ket_thuc" RelativeSize="50" />
+                <LayoutItem Id="dieu_kien_khuyen_mai" RelativeSize="50" />
+                <LayoutItem Id="tinh_trang" RelativeSize="36.170212765957444" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="chi_tiet_san_phamss_Group" Direction="Vertical" RelativeSize="87.55186721991701">
+            <LayoutItem Id="chi_tiet_san_phamss" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="khuyen_mais_ListView" Caption="Danh Sách Khuyến Mãi">
+      <Columns>
+        <ColumnInfo Id="link_anh" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Index="0" Caption="ID" />
+        <ColumnInfo Id="ten_khuyen_mai" Index="1" Caption="Tên Khuyến Mãi" />
+        <ColumnInfo Id="ngay_bat_dau" Index="2" Caption="Ngày Bắt Đầu" />
+        <ColumnInfo Id="ngay_ket_thuc" Index="3" Caption="Ngày Kết Thúc" />
+        <ColumnInfo Id="dieu_kien_khuyen_mai" Index="4" Caption="Điều Kiện" />
+      </Columns>
+    </ListView>
+    <ListView Id="khuyen_mais_LookupListView" Caption="Khuyến Mãi" />
+    <DetailView Id="nha_cung_caps_DetailView" Caption="Chi Tiết Nhà Cung Cấp">
+      <Items>
+        <PropertyEditor Id="dia_chi" Caption="Địa Chỉ" />
+        <PropertyEditor Id="email" Caption="Email" />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="phieu_nhap_khoss" Caption="Danh Sách Hóa Đơn Nhập" />
+        <PropertyEditor Id="so_dien_thoai" Caption="Số Điện Thoại" />
+        <PropertyEditor Id="ten_ncc" Caption="NCC" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="15.145228215767634">
+            <LayoutGroup Id="nha_cung_caps" RelativeSize="100" Caption="Nhà Cung Cấp">
+              <LayoutGroup Id="nha_cung_caps_col1" RelativeSize="49.80353634577603">
+                <LayoutItem Id="id" RelativeSize="36.734693877551024" />
+                <LayoutItem Id="ten_ncc" RelativeSize="26.53061224489796" />
+                <LayoutItem Id="email" RelativeSize="36.734693877551024" />
+              </LayoutGroup>
+              <LayoutGroup Id="nha_cung_caps_col2" RelativeSize="50.19646365422397">
+                <LayoutItem Id="so_dien_thoai" RelativeSize="36.734693877551024" />
+                <LayoutItem Id="dia_chi" RelativeSize="63.265306122448976" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="phieu_nhap_khoss_Group" Direction="Vertical" RelativeSize="84.85477178423237">
+            <LayoutItem Id="phieu_nhap_khoss" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="nha_cung_caps_ListView" Caption="Danh Sách Nhà Cung Cấp">
+      <Columns>
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="ten_ncc" PropertyName="ten_ncc" Caption="Tên Công Ty" />
+        <ColumnInfo Id="email" Caption="Email" />
+        <ColumnInfo Id="so_dien_thoai" Caption="Số Điện Thoại" />
+        <ColumnInfo Id="dia_chi" Caption="Địa Chỉ" />
+      </Columns>
+    </ListView>
+    <ListView Id="nha_cung_caps_phieu_nhap_khoss_ListView" Caption="Hóa Đơn Nhập">
+      <Columns>
+        <ColumnInfo Id="id_nha_cung_cap" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="ma_phieu_nhap" Caption="Mã Hóa Đơn Nhập" />
+        <ColumnInfo Id="id_nhan_vien" Index="1" Caption="ID Nhân Viên" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="2" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="3" Caption="Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="ghi_chu" Index="4" Caption="Ghi Chú" />
+        <ColumnInfo Id="tong_tien" Index="5" Caption="Tổng Tiền" />
+      </Columns>
+    </ListView>
+    <DetailView Id="nhan_viens_DetailView" Caption="Chi Tiết Nhân Viên">
+      <Items>
+        <PropertyEditor Id="dia_chi" Caption="Địa Chỉ" />
+        <PropertyEditor Id="don_hangss" Caption="Hóa Đơn Bán" />
+        <PropertyEditor Id="email" Caption="Email" />
+        <PropertyEditor Id="ho_ten" Caption="Họ Tên" />
+        <PropertyEditor Id="id" Caption="ID" />
+        <PropertyEditor Id="id_chuc_vu" Caption="ID Chức Vụ" />
+        <PropertyEditor Id="id_chuc_vu.ten_chuc_vu" PropertyName="id_chuc_vu.ten_chuc_vu" Caption="Chức Vụ" IsNewNode="True" />
+        <PropertyEditor Id="mat_khau" Caption="Mật Khẩu" />
+        <PropertyEditor Id="ngay_sinh" Caption="Ngày Sinh" />
+        <PropertyEditor Id="phieu_nhap_khoss" Caption="Hóa Đơn Nhập" />
+        <PropertyEditor Id="so_dien_thoai" Caption="Số Điện Thoại" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20.53941908713693">
+            <LayoutGroup Id="nhan_viens" RelativeSize="100">
+              <LayoutGroup Id="nhan_viens_col1" RelativeSize="49.90176817288802">
+                <LayoutItem Id="id" RelativeSize="24" />
+                <LayoutItem Id="ho_ten" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="id_chuc_vu" ViewItem="id_chuc_vu" Index="2" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="id_chuc_vu.ten_chuc_vu" ViewItem="id_chuc_vu.ten_chuc_vu" Index="3" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="dia_chi" RelativeSize="24" Index="4" />
+                <LayoutItem Id="so_dien_thoai" RelativeSize="15.116279069767442" Index="4" Removed="True" />
+                <LayoutItem Id="ngay_sinh" RelativeSize="23.28767123287671" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="nhan_viens_col2" RelativeSize="50.09823182711198">
+                <LayoutItem Id="ngay_sinh" ViewItem="ngay_sinh" Index="0" RelativeSize="24" IsNewNode="True" />
+                <LayoutItem Id="so_dien_thoai" ViewItem="so_dien_thoai" Index="1" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="email" RelativeSize="17.333333333333332" Index="2" />
+                <LayoutItem Id="id_chuc_vu" RelativeSize="28.333333333333332" Index="3" Removed="True" />
+                <LayoutItem Id="mat_khau" RelativeSize="41.333333333333336" Index="3" />
+                <LayoutItem Id="gioi_tinh" RelativeSize="23.28767123287671" Removed="True" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="79.46058091286307">
+            <LayoutGroup Id="don_hangss" RelativeSize="100">
+              <LayoutItem Id="don_hangss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="phieu_nhap_khoss" RelativeSize="100">
+              <LayoutItem Id="phieu_nhap_khoss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="phieu_xuat_khoss" RelativeSize="100" Removed="True">
+              <LayoutItem Id="phieu_xuat_khoss" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="nhan_viens_don_hangss_ListView" Caption="Đơn Hàng - NV">
+      <Columns>
+        <ColumnInfo Id="id" Caption="ID" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="ngay" Caption="Ngày" Index="0" />
+        <ColumnInfo Id="id_khach_hang" Caption="ID Khách Hàng" Index="1" />
+        <ColumnInfo Id="id_khach_hang.ho_ten" PropertyName="id_khach_hang.ho_ten" Index="2" Caption="Tên Khách Hàng" IsNewNode="True" />
+        <ColumnInfo Id="id_don_vi_vc" Caption="ID ĐVVC" Index="3" />
+        <ColumnInfo Id="id_don_vi_vc.ten_don_vi" PropertyName="id_don_vi_vc.ten_don_vi" Index="4" Caption="ĐVVC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Caption="ID Nhân Viên" Index="5" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="6" Caption="Tên Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" Index="7" />
+        <ColumnInfo Id="phuong_thuc_thanh_toan" Caption="PTTT" Index="8" />
+      </Columns>
+    </ListView>
+    <ListView Id="nhan_viens_ListView" Caption="Danh Sách Nhân Viên">
       <Columns>
         <ColumnInfo Id="gioi_tinh" Index="-1" />
         <ColumnInfo Id="id_chuc_vu" Index="-1" />
@@ -301,24 +898,18 @@
       </Columns>
     </ListView>
     <ListView Id="nhan_viens_LookupListView" Caption="Nhân Viên" />
-    <ListView Id="nhan_viens_phieu_nhap_khoss_ListView" Caption="Hóa Đơn Nhập Kho">
+    <ListView Id="nhan_viens_phieu_nhap_khoss_ListView" Caption="Hóa Đơn Nhập">
       <Columns>
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" />
-        <ColumnInfo Id="tinh_trang" Width="90" Index="-1" />
-        <ColumnInfo Id="ma_phieu_nhap" Width="172" Caption="Mã Hóa Đơn" />
-        <ColumnInfo Id="id_nha_cung_cap" Width="299" Caption="Nhà Cung Cấp" PropertyName="id_nha_cung_cap.ten_ncc" />
-        <ColumnInfo Id="ghi_chu" Width="682" Caption="Ghi Chú" />
-        <ColumnInfo Id="tong_tien" Width="171" Caption="Tổng Tiền" />
-      </Columns>
-    </ListView>
-    <ListView Id="nhan_viens_phieu_xuat_khoss_ListView" Caption="Hóa Đơn Bán Hàng">
-      <Columns>
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" />
+        <ColumnInfo Id="id" Index="-1" Caption="ID" />
         <ColumnInfo Id="tinh_trang" Index="-1" />
-        <ColumnInfo Id="ma_phieu_xuat" Width="193" Caption="Mã Hóa Đơn" />
-        <ColumnInfo Id="id_khach_hang" Width="374" Caption="Khách Hàng" PropertyName="id_khach_hang.ho_ten" SortIndex="0" SortOrder="Ascending" />
-        <ColumnInfo Id="ghi_chu" Width="627" Caption="Ghi Chú" />
-        <ColumnInfo Id="tong_tien" Width="177" Caption="Tổng Tiền" />
+        <ColumnInfo Id="ma_phieu_nhap" Index="0" Caption="Mã Hóa Đơn Nhập" />
+        <ColumnInfo Id="id_nha_cung_cap" Index="1" Caption="ID NCC" />
+        <ColumnInfo Id="id_nha_cung_cap.ten_ncc" PropertyName="id_nha_cung_cap.ten_ncc" Index="2" Caption="NCC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Index="3" Caption="ID Nhân Viên" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="4" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="5" Caption="Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="ghi_chu" Index="6" Caption="Ghi Chú" />
+        <ColumnInfo Id="tong_tien" Index="7" Caption="Tổng Tiền" />
       </Columns>
     </ListView>
     <ListView Id="PermissionPolicyUser_Roles_ListView">
@@ -328,141 +919,192 @@
         <ColumnInfo Id="CanEditModel" Width="124" />
       </Columns>
     </ListView>
-    <ListView Id="phieu_nhap_khos_CT_phieu_nhapss_ListView" Caption="Chi Tiết Hóa Đơn Nhập Kho">
+    <ListView Id="phieu_nhap_khos_CT_phieu_nhapss_ListView">
       <Columns>
-        <ColumnInfo Id="id_phieu_nhap" Caption="Mã Phiếu Nhập" />
-        <ColumnInfo Id="tinh_trang" Width="90" Index="-1" />
-        <ColumnInfo Id="id_san_pham" Width="109" Caption="Tên Sản Phẩm" PropertyName="id_san_pham.ten_san_pham" />
-        <ColumnInfo Id="so_luong" Width="83" Caption="Số Lượng" />
-        <ColumnInfo Id="don_gia" Width="77" Caption="Đơn Giá" />
-        <ColumnInfo Id="thanh_tien" Width="92" Caption="Thành Tiền" />
+        <ColumnInfo Id="id_phieu_nhap" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id_san_pham" Index="0" Caption="ID Sản Phẩm" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="1" Caption="Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="id_phieu_nhap.id_nhan_vien.ho_ten" PropertyName="id_phieu_nhap.id_nhan_vien.ho_ten" Index="2" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="so_luong" Index="3" Caption="Số Lượng" />
+        <ColumnInfo Id="don_gia" Index="4" Caption="Đơn Giá" />
+        <ColumnInfo Id="thanh_tien" Index="5" Caption="Thành Tiền" />
       </Columns>
     </ListView>
-    <DetailView Id="phieu_nhap_khos_DetailView" Caption="Hóa Đơn Nhập Kho">
+    <DetailView Id="phieu_nhap_khos_DetailView" Caption="Chi Tiết Hóa Đơn Nhập">
       <Items>
+        <PropertyEditor Id="CT_phieu_nhapss" Caption="Danh Sách Sản Phẩm " />
         <PropertyEditor Id="ghi_chu" Caption="Ghi Chú" />
         <PropertyEditor Id="id" Caption="ID" />
-        <PropertyEditor Id="id_nha_cung_cap" Caption="Nhà Cung Cấp" PropertyName="id_nha_cung_cap.ten_ncc" />
-        <PropertyEditor Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" />
-        <PropertyEditor Id="ma_phieu_nhap" Caption="Mã Hóa Đơn" />
+        <PropertyEditor Id="id_nha_cung_cap" Caption="ID NCC" />
+        <PropertyEditor Id="id_nha_cung_cap.ten_ncc" PropertyName="id_nha_cung_cap.ten_ncc" Caption="NCC" IsNewNode="True" />
+        <PropertyEditor Id="id_nhan_vien" Caption="ID Nhân Viên" />
+        <PropertyEditor Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Caption="Nhân Viên" IsNewNode="True" />
+        <PropertyEditor Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Caption="Chức Vụ" IsNewNode="True" />
+        <PropertyEditor Id="ma_phieu_nhap" Caption="Mã Hóa Đơn Nhập" />
         <PropertyEditor Id="tong_tien" Caption="Tổng Tiền" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="17.842323651452283">
-            <LayoutGroup Id="phieu_nhap_khos" RelativeSize="100">
-              <LayoutGroup Id="phieu_nhap_khos_col1" RelativeSize="49.89878542510122">
-                <LayoutItem Id="id" RelativeSize="29.032258064516128" />
-                <LayoutItem Id="ma_phieu_nhap" RelativeSize="20.967741935483872" />
-                <LayoutItem Id="id_nha_cung_cap" RelativeSize="20.967741935483872" />
-                <LayoutItem Id="id_nhan_vien" RelativeSize="29.032258064516128" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20.53941908713693">
+            <LayoutGroup Id="phieu_nhap_khos" RelativeSize="100" Caption="Hóa Đơn Nhập">
+              <LayoutGroup Id="phieu_nhap_khos_col1" RelativeSize="49.80353634577603">
+                <LayoutItem Id="id" RelativeSize="24" />
+                <LayoutItem Id="ma_phieu_nhap" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="id_nha_cung_cap" RelativeSize="17.333333333333332" />
+                <LayoutItem Id="id_nha_cung_cap.ten_ncc" ViewItem="id_nha_cung_cap.ten_ncc" Index="3" RelativeSize="41.333333333333336" IsNewNode="True" />
+                <LayoutItem Id="id_nhan_vien" RelativeSize="13.131313131313131" Index="4" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="phieu_nhap_khos_col2" RelativeSize="50.10121457489878">
-                <LayoutItem Id="ghi_chu" RelativeSize="29.032258064516128" />
-                <LayoutItem Id="tong_tien" RelativeSize="70.96774193548387" />
-                <LayoutItem Id="tinh_trang" RelativeSize="50" Removed="True" />
+              <LayoutGroup Id="phieu_nhap_khos_col2" RelativeSize="50.19646365422397">
+                <LayoutItem Id="id_nhan_vien" ViewItem="id_nhan_vien" Index="0" RelativeSize="24" IsNewNode="True" />
+                <LayoutItem Id="id_nhan_vien.ho_ten" ViewItem="id_nhan_vien.ho_ten" Index="1" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" ViewItem="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="2" RelativeSize="17.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="ghi_chu" RelativeSize="17.333333333333332" Index="3" />
+                <LayoutItem Id="tong_tien" RelativeSize="24" Index="4" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="CT_phieu_nhapss_Group" Direction="Vertical" RelativeSize="82.15767634854772" Caption="Chi Tiết Nhập Kho">
+          <LayoutGroup Id="CT_phieu_nhapss_Group" Direction="Vertical" RelativeSize="79.46058091286307">
             <LayoutItem Id="CT_phieu_nhapss" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="phieu_nhap_khos_ListView" ShowAutoFilterRow="False" Caption="Hóa Đơn Nhập Kho">
+    <ListView Id="phieu_nhap_khos_ListView" Caption="Danh Sách Hóa Đơn Nhập">
       <Columns>
         <ColumnInfo Id="tinh_trang" Index="-1" />
-        <ColumnInfo Id="id" Caption="ID" Index="0" />
-        <ColumnInfo Id="ma_phieu_nhap" Caption="Mã Hóa Đơn" Index="1" />
-        <ColumnInfo Id="id_nha_cung_cap" Caption="Nhà Cung Cấp" PropertyName="id_nha_cung_cap.ten_ncc" Index="2" />
-        <ColumnInfo Id="id_nhan_vien" Caption="Nhân Viên" PropertyName="id_nhan_vien.ho_ten" Index="3" />
-        <ColumnInfo Id="ghi_chu" Caption="Ghi Chú" Index="4" />
-        <ColumnInfo Id="tong_tien" Caption="Tổng Tiền" Index="5" />
+        <ColumnInfo Id="ma_phieu_nhap" Caption="Mã Hóa Đơn" />
+        <ColumnInfo Id="id_nha_cung_cap" Caption="ID NCC" />
+        <ColumnInfo Id="id_nha_cung_cap.ten_ncc" PropertyName="id_nha_cung_cap.ten_ncc" Index="2" Caption="NCC" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien" Index="3" Caption="ID Nhân Viên" />
+        <ColumnInfo Id="id_nhan_vien.ho_ten" PropertyName="id_nhan_vien.ho_ten" Index="4" Caption="Nhân Viên" IsNewNode="True" />
+        <ColumnInfo Id="id_nhan_vien.id_chuc_vu.ten_chuc_vu" PropertyName="id_nhan_vien.id_chuc_vu.ten_chuc_vu" Index="5" Caption="Chức Vụ" IsNewNode="True" />
+        <ColumnInfo Id="ghi_chu" Index="6" Caption="Ghi Chú" />
+        <ColumnInfo Id="tong_tien" Index="7" Caption="Tổng Tiền" />
       </Columns>
     </ListView>
-    <ListView Id="phieu_nhap_khos_LookupListView" Caption="Hóa Đơn Nhập Kho" />
+    <DetailView Id="phieu_xuat_khos_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="31.61764705882353">
+            <LayoutGroup Id="phieu_xuat_khos" Caption="Hóa Đơn Bán Hàng" RelativeSize="100">
+              <LayoutGroup Id="phieu_xuat_khos_col1" RelativeSize="49.94944388270981">
+                <LayoutItem Id="id" RelativeSize="29.032258064516128" />
+                <LayoutItem Id="ma_phieu_xuat" RelativeSize="20.967741935483872" />
+                <LayoutItem Id="id_khach_hang" RelativeSize="20.967741935483872" />
+                <LayoutItem Id="id_nhan_vien" RelativeSize="29.032258064516128" />
+              </LayoutGroup>
+              <LayoutGroup Id="phieu_xuat_khos_col2" RelativeSize="50.05055611729019">
+                <LayoutItem Id="ghi_chu" RelativeSize="29.032258064516128" />
+                <LayoutItem Id="tong_tien" RelativeSize="20.967741935483872" />
+                <LayoutItem Id="tinh_trang" RelativeSize="50" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="CT_phieu_xuatss_Group" Direction="Vertical" RelativeSize="68.38235294117646" Caption="Chi Tiết Hóa Đơn Bán Hàng">
+            <LayoutItem Id="CT_phieu_xuatss" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="san_phams_chi_tiet_san_phamss_ListView" Caption="Chi Tiết Sản Phẩm">
       <Columns>
-        <ColumnInfo Id="tinh_trang" Width="290" Index="-1" />
-        <ColumnInfo Id="id_san_pham" Caption="Tên Sản Phẩm" PropertyName="id_san_pham.ten_san_pham" Index="0" Width="453" SortIndex="-1" SortOrder="None" />
-        <ColumnInfo Id="so_seri" Caption="Seri" Index="1" Width="313" />
-        <ColumnInfo Id="id_khuyen_mai" Width="492" Caption="Khuyến Mãi" PropertyName="id_khuyen_mai.ten_khuyen_mai" Index="2" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="so_seri" Index="0" Caption="Seri" />
+        <ColumnInfo Id="id_san_pham" Index="1" Caption="ID Sản Phẩm" />
+        <ColumnInfo Id="id_san_pham.ten_san_pham" PropertyName="id_san_pham.ten_san_pham" Index="2" Caption="Tên Sản Phẩm" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai" Index="3" Caption="ID Khuyến Mãi" />
+        <ColumnInfo Id="id_khuyen_mai.ten_khuyen_mai" PropertyName="id_khuyen_mai.ten_khuyen_mai" Index="4" Caption="Tên Khuyến Mãi" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai.ngay_bat_dau" PropertyName="id_khuyen_mai.ngay_bat_dau" Index="5" Caption="Ngày Bắt Đầu" IsNewNode="True" />
+        <ColumnInfo Id="id_khuyen_mai.ngay_ket_thuc" PropertyName="id_khuyen_mai.ngay_ket_thuc" Index="6" Caption="Ngày Kết Thúc" IsNewNode="True" />
       </Columns>
     </ListView>
     <ListView Id="san_phams_CT_don_hangss_ListView" Caption="Chi Tiết Đơn Hàng">
       <Columns>
-        <ColumnInfo Id="id_don_hang" Width="221" Caption="Đơn Hàng" SortIndex="0" SortOrder="Ascending" />
-        <ColumnInfo Id="id_san_pham" PropertyName="id_san_pham.ten_san_pham" Caption="Tên Sản Phẩm" Index="1" Width="306" />
-        <ColumnInfo Id="so_seri" Width="146" Caption="Seri" Index="2" />
-        <ColumnInfo Id="ngay_bd_bh" Width="168" Caption="Bắt Đầu BH" Index="3" />
-        <ColumnInfo Id="ngay_het_bh" Width="143" Caption="Hết BH" Index="4" />
-        <ColumnInfo Id="thanh_tien" Width="145" Caption="Thành Tiền" Index="5" />
+        <ColumnInfo Id="id_don_hang" Caption="ID Đơn Hàng" />
+        <ColumnInfo Id="so_seri" Caption="Seri" />
+        <ColumnInfo Id="id_san_pham" Caption="ID Sản Phẩm" />
+        <ColumnInfo Id="ngay_bd_bh" Caption="Ngày BĐ BH" />
+        <ColumnInfo Id="ngay_het_bh" Caption="Ngày Hết BH" />
+        <ColumnInfo Id="thanh_tien" Caption="Thành Tiền" />
       </Columns>
     </ListView>
-    <ListView Id="san_phams_CT_phieu_nhapss_ListView" Caption="Chi Tiết Hóa Đơn Nhập Kho">
-      <Columns>
-        <ColumnInfo Id="id_phieu_nhap" Width="137" />
-        <ColumnInfo Id="so_luong" Width="128" />
-        <ColumnInfo Id="don_gia" Width="141" />
-        <ColumnInfo Id="thanh_tien" Width="115" />
-        <ColumnInfo Id="tinh_trang" Width="117" />
-      </Columns>
-    </ListView>
-    <DetailView Id="san_phams_DetailView">
+    <DetailView Id="san_phams_DetailView" Caption="Chi Tiết Sản Phẩm">
       <Items>
+        <PropertyEditor Id="chi_tiet_san_phamss" Caption="Chi Tiết Sản Phẩm" />
+        <PropertyEditor Id="CT_don_hangss" Caption="Chi Tiết Đơn Hàng" />
+        <PropertyEditor Id="CT_phieu_nhapss" Caption="Chi Tiết Phiếu Nhập" />
+        <PropertyEditor Id="CT_phieu_xuatss" Caption="Chi Tiết Phiếu Xuất" />
         <PropertyEditor Id="don_gia" Caption="Đơn Giá" />
-        <PropertyEditor Id="don_vi_tinh" Caption="Đơn Vị Tính: " />
+        <PropertyEditor Id="don_vi_tinh" Caption="ĐVT" />
         <PropertyEditor Id="id" Caption="ID" />
-        <PropertyEditor Id="id_danh_muc" Caption="Danh Mục: " />
-        <PropertyEditor Id="id_danh_muc_cha" Caption="Danh Mục Cha: " />
-        <PropertyEditor Id="mo_ta" Caption="Mô Tả: " />
+        <PropertyEditor Id="id_danh_muc" Caption="ID Danh Mục" />
+        <PropertyEditor Id="id_danh_muc_cha" Caption="ID Danh Mục Cha" />
+        <PropertyEditor Id="id_danh_muc.ten_danh_muc" PropertyName="id_danh_muc.ten_danh_muc" Caption="Tên Danh Mục" IsNewNode="True" />
+        <PropertyEditor Id="mo_ta" Caption="Mô Tả" />
         <PropertyEditor Id="so_luong" Caption="Số Lượng" />
-        <PropertyEditor Id="ten_san_pham" Caption="Tên Sản Phẩm: " />
-        <PropertyEditor Id="thoi_han_bao_hanh" Caption="Thời Hạn Bảo Hành" />
+        <PropertyEditor Id="ten_san_pham" Caption="Tên Sản Phẩm" />
+        <PropertyEditor Id="thoi_han_bao_hanh" Caption="THBH" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="20.53941908713693">
-            <LayoutGroup Id="san_phams" RelativeSize="100" Caption="Sản Phẩm">
-              <LayoutGroup Id="san_phams_col1" RelativeSize="49.943502824858754">
-                <LayoutItem Id="id" RelativeSize="24" />
-                <LayoutItem Id="ten_san_pham" ViewItem="ten_san_pham" Index="1" RelativeSize="17.333333333333332" IsNewNode="True" Removed="True" />
-                <LayoutItem Id="id_danh_muc" Index="2" RelativeSize="17.333333333333332" />
-                <LayoutItem Id="so_luong" Index="3" RelativeSize="17.333333333333332" />
-                <LayoutItem Id="don_gia" Index="4" RelativeSize="24" />
-                <LayoutItem Id="link_anh" Index="4" RelativeSize="15.116279069767442" Removed="True" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="43.67816091954023">
+            <LayoutGroup Id="san_phams" RelativeSize="83.15789473684211" Caption="Sản Phẩm">
+              <LayoutGroup Id="san_phams_col1" RelativeSize="52.151898734177216">
+                <LayoutItem Id="id" RelativeSize="28.333333333333332" />
+                <LayoutItem Id="ten_san_pham" RelativeSize="21.666666666666668" />
+                <LayoutItem Id="id_danh_muc" RelativeSize="21.666666666666668" />
+                <LayoutItem Id="id_danh_muc.ten_danh_muc" ViewItem="id_danh_muc.ten_danh_muc" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="don_gia" RelativeSize="23.28767123287671" Index="4" Removed="True" />
+                <LayoutItem Id="so_luong" RelativeSize="15.116279069767442" Index="4" Removed="True" />
+                <LayoutItem Id="link_anh" RelativeSize="15.116279069767442" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="san_phams_col2" RelativeSize="50.056497175141246">
-                <LayoutItem Id="thoi_han_bao_hanh" RelativeSize="24" />
-                <LayoutItem Id="don_vi_tinh" RelativeSize="17.333333333333332" />
-                <LayoutItem Id="mo_ta" RelativeSize="17.333333333333332" />
-                <LayoutItem Id="id_danh_muc_cha" RelativeSize="41.333333333333336" />
-                <LayoutItem Id="tinh_trang" RelativeSize="23.28767123287671" Removed="True" />
+              <LayoutGroup Id="san_phams_col2" RelativeSize="47.848101265822784" Direction="Vertical" Caption="san_phams_col2">
+                <LayoutItem Id="don_gia" ViewItem="don_gia" Index="0" RelativeSize="28.333333333333332" IsNewNode="True" />
+                <LayoutItem Id="mo_ta" ViewItem="mo_ta" Index="0" RelativeSize="41.5617128463476" Removed="True" />
+                <LayoutItem Id="so_luong" ViewItem="so_luong" Index="1" RelativeSize="21.666666666666668" IsNewNode="True" />
+                <LayoutItem Id="thoi_han_bao_hanh" ViewItem="thoi_han_bao_hanh" Index="2" RelativeSize="21.666666666666668" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="don_vi_tinh" ViewItem="don_vi_tinh" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="id_danh_muc_cha" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="tinh_trang" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
+            <LayoutItem Id="mo_ta" ViewItem="mo_ta" Index="1" RelativeSize="16.842105263157894" IsNewNode="True" />
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="79.46058091286307">
-            <LayoutGroup Id="chi_tiet_san_phamss" Direction="Vertical" RelativeSize="100">
-              <LayoutItem Id="chi_tiet_san_phamss" Index="0" RelativeSize="100" />
+          <TabbedGroup Id="Tabs" RelativeSize="56.32183908045977" Index="1">
+            <LayoutGroup Id="chi_tiet_san_phamss" RelativeSize="100">
+              <LayoutItem Id="chi_tiet_san_phamss" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="CT_don_hangss" RelativeSize="100">
-              <LayoutItem Id="CT_don_hangss" RelativeSize="100" />
-            </LayoutGroup>
-            <LayoutGroup Id="CT_phieu_nhapss" RelativeSize="100">
+            <LayoutGroup Id="CT_phieu_nhapss" RelativeSize="100" Index="1" Removed="True">
               <LayoutItem Id="CT_phieu_nhapss" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="CT_phieu_xuatss" RelativeSize="100">
+            <LayoutGroup Id="CT_phieu_xuatss" RelativeSize="100" Index="1" Removed="True">
               <LayoutItem Id="CT_phieu_xuatss" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CT_don_hangss" RelativeSize="100" Removed="True">
+              <LayoutItem Id="CT_don_hangss" RelativeSize="100" />
             </LayoutGroup>
           </TabbedGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="san_phams_ListView">
+    <ListView Id="san_phams_ListView" Caption="Danh Sách Sản Phẩm">
       <Columns>
-        <ColumnInfo Id="ten_san_pham" Caption="Tên Sản Phẩm" />
+        <ColumnInfo Id="id_danh_muc_cha" Caption="ID Danh Mục Cha" Index="-1" />
+        <ColumnInfo Id="link_anh" Index="-1" />
+        <ColumnInfo Id="tinh_trang" Index="-1" />
+        <ColumnInfo Id="id" Caption="ID" Index="0" />
+        <ColumnInfo Id="ten_san_pham" Caption="Tên Sản Phẩm" Index="1" />
+        <ColumnInfo Id="id_danh_muc" Caption="ID Danh Mục" Index="2" />
+        <ColumnInfo Id="id_danh_muc.ten_danh_muc" PropertyName="id_danh_muc.ten_danh_muc" Index="3" Caption="Tên Danh Mục" IsNewNode="True" />
+        <ColumnInfo Id="so_luong" Caption="Số Lượng" Index="4" />
+        <ColumnInfo Id="don_gia" Caption="Đơn Giá" Index="5" />
+        <ColumnInfo Id="don_vi_tinh" Caption="ĐVT" Index="6" />
+        <ColumnInfo Id="thoi_han_bao_hanh" Caption="Thời Hạn Bảo Hành" Index="7" />
+        <ColumnInfo Id="mo_ta" Caption="Mô Tả" Index="8" />
       </Columns>
     </ListView>
+    <ListView Id="san_phams_LookupListView" Caption="Sản Phẩm" />
   </Views>
 </Application>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="don_hangs_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="CT_don_hangss_Group" Direction="Vertical" RelativeSize="79.46058091286307" Caption="Chi Tiết Đơn Hàng">
+            <LayoutItem Id="CT_don_hangss" RelativeSize="100" Index="0" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="chi_tiet_san_phams_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="chi_tiet_san_phams">
+              <LayoutItem Id="so_seri" RelativeSize="8.762886597938145" />
+              <LayoutItem Id="id_san_pham" RelativeSize="6.701030927835052" />
+              <LayoutItem Id="id_khuyen_mai" RelativeSize="6.701030927835052" Index="3" />
+              <LayoutItem Id="tinh_trang" Index="4" RelativeSize="71.1340206185567" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

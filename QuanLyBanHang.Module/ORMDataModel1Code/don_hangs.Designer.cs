@@ -74,6 +74,8 @@ namespace QuanLyBanHang.Module.QuanLyBanHang
         }
         [Association(@"CT_don_hangsReferencesdon_hangs")]
         public XPCollection<CT_don_hangs> CT_don_hangss { get { return GetCollection<CT_don_hangs>(nameof(CT_don_hangss)); } }
+        [Association(@"chi_tiet_san_phamsReferencesdon_hangs")]
+        public XPCollection<chi_tiet_san_phams> chi_tiet_san_phamss { get { return GetCollection<chi_tiet_san_phams>(nameof(chi_tiet_san_phamss)); } }
     }
 
 }

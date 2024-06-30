@@ -47,6 +47,13 @@ namespace QuanLyBanHang.Module.QuanLyBanHang
             get { return ftinh_trang; }
             set { SetPropertyValue<int>(nameof(tinh_trang), ref ftinh_trang, value); }
         }
+        don_hangs fid_don_hang;
+        [Association(@"chi_tiet_san_phamsReferencesdon_hangs")]
+        public don_hangs id_don_hang
+        {
+            get { return fid_don_hang; }
+            set { SetPropertyValue<don_hangs>(nameof(id_don_hang), ref fid_don_hang, value); }
+        }
     }
 
 }
